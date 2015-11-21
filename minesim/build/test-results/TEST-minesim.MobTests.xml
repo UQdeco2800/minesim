@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="minesim.MobTests" tests="5" skipped="0" failures="0" errors="0" timestamp="2015-11-21T05:21:30" hostname="Tims-Retina-MacBook-Pro.local" time="0.196">
+  <properties/>
+  <testcase name="testMobInitial" classname="minesim.MobTests" time="0.0"/>
+  <testcase name="testMobInteractions" classname="minesim.MobTests" time="0.084"/>
+  <testcase name="testMobHealthVars" classname="minesim.MobTests" time="0.0"/>
+  <testcase name="testMobAnimate" classname="minesim.MobTests" time="0.0"/>
+  <testcase name="testMobOnTickAI" classname="minesim.MobTests" time="0.068"/>
+  <system-out><![CDATA[minesim.AchievementDatabaseHandler Connected database successfully
+minesim.AchievementDatabaseHandler zombieKilled is now 1
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

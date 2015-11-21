@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="" prefHeight="500.0" prefWidth="160.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="minesim.contexts.peonStatusContextController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <SplitPane id="" dividerPositions="" focusTraversable="true" orientation="VERTICAL" prefHeight="800.0" prefWidth="400.0" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="-2.0">
+      <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+          <children>
+            <TabPane id="tabPane" layoutX="0.0" layoutY="0.0" prefHeight="798.0" prefWidth="168.0" rotateGraphic="false" side="TOP" styleClass="PeonStatus" tabClosingPolicy="UNAVAILABLE">
+              <stylesheets>
+                <URL value="@../../css/tabPane.css" />
+              </stylesheets>
+              <tabs>
+                <Tab id="main" style="-fx-background-image: url(&quot;../Icons/menuBackgroundTile_x60.png&quot;);" text="Main">
+                  <content>
+                    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                      <children>
+                        <GridPane layoutX="4.0" layoutY="1.0" maxWidth="-Infinity" prefHeight="600.0" prefWidth="153.0">
+                          <children>
+                            <Label id="peonName" prefWidth="113.0" text="Health" textFill="WHITE" underline="false" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                              <font>
+                                <Font name="Berlin Sans FB Demi Bold" size="18.0" fx:id="x3" />
+                              </font>
+                              <labelFor>
+                                <Label fx:id="strLabel" alignment="CENTER_RIGHT" contentDisplay="RIGHT" graphicTextGap="0.0" layoutX="90.0" layoutY="55.0" text="&lt;Strength&gt;" textAlignment="RIGHT" textFill="RED">
+                                  <font>
+                                    <Font name="Berlin Sans FB Bold" size="12.0" fx:id="x8" />
+                                  </font>
+                                  <labelFor>
+                                    <ProgressBar fx:id="strBar" layoutX="80.0" layoutY="40.0" prefWidth="72.0" progress="0.0" />
+                                  </labelFor>
+                                </Label>
+                              </labelFor>
+                            </Label>
+                            <ImageView fitHeight="77.85728908199683" fitWidth="68.12512969970703" pickOnBounds="true" preserveRatio="true" x="0.5" y="0.5" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.hgrow="NEVER" GridPane.rowIndex="5" GridPane.valignment="TOP" GridPane.vgrow="NEVER">
+                              <image>
+                                <Image url="@../../PeonMiner.png" />
+                              </image>
+                            </ImageView>
+                            <Label fx:id="currentAction" alignment="CENTER_LEFT" font="$x3" prefWidth="82.0" text="(Current Action)" textFill="WHITE" textOverrun="CLIP" underline="false" GridPane.columnIndex="0" GridPane.columnSpan="4" GridPane.rowIndex="9" />
+                            <ProgressBar fx:id="healthBar" prefWidth="95.0" progress="0.0" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                            <Label id="peonName" font="$x3" prefWidth="113.0" text="Stamina" textFill="WHITE" underline="false" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+                              <labelFor>
+                                <Label id="strLabel" layoutX="108.0" layoutY="14.0" text="&lt;Strength&gt;" />
+                              </labelFor>
+                            </Label>
+                            <ProgressBar fx:id="staminaBar" prefWidth="95.0" progress="0.0" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
+                            <Label id="peonName" fx:id="staminaLabel" prefWidth="84.0" text="&lt;00/00&gt;" textFill="WHITE" underline="false" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+                              <font>
+                                <Font name="Berlin Sans FB Demi Bold" size="16.0" fx:id="x2" />
+                              </font>
+                              <labelFor>
+                                <Label id="strLabel" layoutX="108.0" layoutY="14.0" text="&lt;Strength&gt;" />
+                              </labelFor>
+                            </Label>
+                            <Label id="peonName" fx:id="healthLabel" font="$x2" prefWidth="84.0" text="&lt;00/00&gt;" textFill="WHITE" underline="false" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                              <labelFor>
+                                <Label id="strLabel" layoutX="108.0" layoutY="14.0" text="&lt;Strength&gt;" />
+                              </labelFor>
+                            </Label>
+                            <Label fx:id="peonName" text="(Name Label)" textFill="WHITE" underline="false" GridPane.columnIndex="0" GridPane.columnSpan="4" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER">
+                              <font>
+                                <Font name="Berlin Sans FB Demi Bold" size="22.0" fx:id="x4" />
+                              </font>
+                            </Label>
+                            <Button fx:id="centreOnPeonButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" text="Camera" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="5" />
+                            <Button fx:id="removePeonButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="77.0" text="Dismiss" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="6" />
+                            <Button id="querybutton" fx:id="queryButton" mnemonicParsing="false" prefHeight="40.0" prefWidth="98.0" text="?" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="7" />
+                          </children>
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="28.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                        </GridPane>
+                      </children>
+                    </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="Inventory">
+                  <content>
+                    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                      <children>
+                        <GridPane layoutX="0.0" layoutY="14.0" prefHeight="453.0" prefWidth="164.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                        </GridPane>
+                        <Label alignment="CENTER" font="$x4" layoutX="-3.0" layoutY="0.0" prefWidth="164.0" text="Inventory" textFill="WHITE" />
+                        <ListView fx:id="inventoryList" layoutX="0.0" layoutY="25.0" prefHeight="222.0" prefWidth="164.0" />
+                        <Button fx:id="emptyInventoryButton" layoutX="80.0" layoutY="250.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="78.0" text="Drop Everything" textAlignment="CENTER" wrapText="true" />
+                        <Button id="dropButtton" fx:id="dropButton" layoutX="0.0" layoutY="250.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="78.0" text="Drop Item" wrapText="true" />
+                      </children>
+                    </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="Mood">
+                  <content>
+                    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                      <children>
+                        <Label layoutX="14.0" layoutY="109.0" text="Mood">
+                          <font>
+                            <Font name="Berlin Sans FB" size="12.0" fx:id="x5" />
+                          </font>
+                        </Label>
+                        <Label fx:id="moodLabel" font="$x5" layoutX="115.0" layoutY="111.0" text="&lt;Mood&gt;" />
+                        <Label id="peonName" alignment="CENTER" contentDisplay="CENTER" font="$x5" layoutX="0.0" layoutY="14.0" prefWidth="170.0" text="Mood" textAlignment="CENTER" />
+                        <Label font="$x5" layoutX="4.0" layoutY="83.0" text="Annoyance" />
+                        <Label id="moodLabel" fx:id="annoyanceLabel" font="$x5" layoutX="85.0" layoutY="83.0" text="&lt;Annoyance&gt;" />
+                        <Label font="$x5" layoutX="4.0" layoutY="55.0" text="Happiness" />
+                        <Label id="moodLabel" fx:id="happinessLabel" font="$x5" layoutX="85.0" layoutY="55.0" text="&lt;Happiness&gt;" />
+                      </children>
+                    </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="Actions">
+                  <content>
+                    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                      <children>
+                        <Label id="peonName" alignment="CENTER" contentDisplay="CENTER" layoutX="-1.0" layoutY="0.0" prefWidth="170.0" text="Actions" textAlignment="CENTER" textFill="WHITE">
+                          <font>
+                            <Font name="Berlin Sans FB" size="32.0" />
+                          </font>
+                        </Label>
+                        <Label id="peonName" alignment="CENTER" contentDisplay="CENTER" font="$x5" layoutX="-1.0" layoutY="44.0" prefWidth="170.0" text="Notifications Related to this peon" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+                        <ListView fx:id="notificationList" layoutX="-1.0" layoutY="119.0" prefHeight="200.0" prefWidth="168.0" />
+                      </children>
+                    </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="Stats">
+                  <content>
+                    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                      <children>
+                        <Label font="$x8" layoutX="7.0" layoutY="38.0" text="Strength" textFill="RED" />
+                        <Label font="$x8" layoutX="9.0" layoutY="79.0" text="Speed">
+                          <textFill>
+                            <Color blue="0.904" green="1.000" red="0.200" fx:id="x6" />
+                          </textFill>
+                        </Label>
+                        <Label font="$x8" layoutX="8.0" layoutY="127.0" text="Luck">
+                          <textFill>
+                            <Color blue="0.000" green="0.960" red="1.000" fx:id="x7" />
+                          </textFill>
+                        </Label>
+                        <Label font="$x8" layoutX="6.0" layoutY="178.0" text="Experience" textFill="WHITE" />
+                        <Label font="$x8" layoutX="11.0" layoutY="219.0" text="Level" textFill="WHITE" />
+                        <Label font="$x8" layoutX="9.0" layoutY="239.0" text="Class" textFill="WHITE" />
+                        <fx:reference source="strLabel" />
+                        <Label fx:id="speedLabel" alignment="CENTER_RIGHT" contentDisplay="RIGHT" font="$x8" graphicTextGap="0.0" layoutX="107.0" layoutY="99.0" text="&lt;Speed&gt;" textAlignment="RIGHT" textFill="$x6">
+                          <labelFor>
+                            <ProgressBar fx:id="speedBar" layoutX="79.0" layoutY="81.0" prefWidth="72.0" progress="0.0" />
+                          </labelFor>
+                        </Label>
+                        <Label fx:id="luckLabel" alignment="CENTER_RIGHT" contentDisplay="RIGHT" font="$x8" graphicTextGap="0.0" layoutX="113.0" layoutY="148.0" text="&lt;Luck&gt;" textAlignment="RIGHT" textFill="$x7">
+                          <labelFor>
+                            <ProgressBar fx:id="luckBar" layoutX="79.0" layoutY="129.0" prefWidth="72.0" progress="0.0" />
+                          </labelFor>
+                        </Label>
+                        <Label fx:id="expLabel" alignment="CENTER_RIGHT" contentDisplay="RIGHT" font="$x8" graphicTextGap="0.0" layoutX="77.0" layoutY="198.0" text="&lt;Experience&gt;" textAlignment="JUSTIFY" textFill="WHITE">
+                          <labelFor>
+                            <ProgressBar fx:id="expBar" layoutX="80.0" layoutY="179.0" prefWidth="72.0" progress="0.0" />
+                          </labelFor>
+                        </Label>
+                        <Label fx:id="lvlLabel" alignment="CENTER_RIGHT" contentDisplay="RIGHT" font="$x8" layoutX="101.0" layoutY="219.0" text="&lt;Level&gt;" textFill="WHITE" />
+                        <Label fx:id="classLabel" alignment="CENTER_RIGHT" contentDisplay="RIGHT" font="$x8" layoutX="106.0" layoutY="239.0" text="&lt;Class&gt;" textFill="WHITE" />
+                        <fx:reference source="strBar" />
+                        <fx:reference source="speedBar" />
+                        <fx:reference source="luckBar" />
+                        <fx:reference source="expBar" />
+                      </children>
+                    </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="Thoughts">
+                  <content>
+                    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                      <children>
+                        <Label id="peonName" alignment="CENTER" contentDisplay="CENTER" layoutX="0.0" layoutY="0.0" prefWidth="170.0" text="Thoughts" textAlignment="CENTER" textFill="WHITE">
+                          <font>
+                            <Font name="Berlin Sans FB Demi Bold" size="28.0" fx:id="x1" />
+                          </font>
+                        </Label>
+                        <Label id="peonName" alignment="CENTER" contentDisplay="CENTER" font="$x4" layoutX="0.0" layoutY="44.0" prefWidth="170.0" text="Thoughts of" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+                        <ListView id="notificationList" fx:id="thoughtsList" layoutX="0.0" layoutY="119.0" prefHeight="200.0" prefWidth="168.0" />
+                        <Label id="peonName" fx:id="peonName2" alignment="CENTER" font="$x4" layoutX="-1.0" layoutY="83.0" prefWidth="170.0" text="(Name Label)" textFill="WHITE" />
+                      </children>
+                    </AnchorPane>
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+          </children>
+        </AnchorPane>
+      </items>
+      <stylesheets>
+        <URL value="@../../css/tabPane.css" />
+      </stylesheets>
+    </SplitPane>
+  </children>
+</AnchorPane>

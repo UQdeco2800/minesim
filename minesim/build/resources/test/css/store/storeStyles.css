@@ -1,0 +1,33 @@
+
+.scroll-pane {
+    -fx-border-color:#E1C31A;
+    -fx-border-width: 3;
+    -fx-background-image: url('../../Icons/menuBackgroundTile_x60.png');
+}
+
+.label {
+    -fx-text-fill:white;
+    -fx-font-family: 'Super Retro M54';
+    -fx-background-color:#4b3e0c;
+    -fx-background-radius:0;
+    -fx-border-width:1, 1, 1, 0;
+    -fx-border-color:#E1C31A;
+    -fx-padding:1;
+}
+
+.vbox {
+    -fx-background-color:#4b3e0c;
+}
+
+.holder-pane {
+    -fx-background-color:#4b3e0c;
+;
+}
+/*
+
+    -fx-min-width: 24px;
+    -fx-pref-height: 32px;
+    -fx-pref-width: 32px;
+    -fx-max-height: 64px;
+    -fx-max-width: 64px;
+    */

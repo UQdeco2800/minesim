@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+          prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="minesim.controllers.settingsMenuController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <VBox layoutX="10.0" layoutY="10.0" GridPane.columnIndex="1">
+         <children>
+                 <TitledPane animated="false" collapsible="false" graphicTextGap="0.0" stylesheets="@../../css/menu.css" text="Sound Settings" textAlignment="CENTER">
+                     <content>
+                         <VBox prefHeight="631.0" prefWidth="289.0" styleClass="vbox" stylesheets="@../../css/soundMenu.css">
+                             <children>
+                                 <Pane style="-fx-border-color: gray;" styleClass="pane" stylesheets="@../../css/soundMenu.css">
+                                     <children>
+                                         <Label layoutX="1.0" layoutY="136.0" text="Sound FX ">
+                                             <font>
+                                                 <Font name="System Bold" size="15.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                 <Insets top="15.0" />
+                                             </VBox.margin>
+                                             <padding>
+                                                 <Insets left="10.0" top="10.0" />
+                                             </padding>
+                                         </Label>
+                                         <Label layoutX="2.0" layoutY="-1.0" text="Music Preferences">
+                                             <font>
+                                                 <Font name="System Bold" size="15.0" />
+                                             </font>
+                                             <padding>
+                                                 <Insets left="10.0" top="10.0" />
+                                             </padding>
+                                              </Label>
+                                         <CheckBox fx:id="musicLoopCheck" layoutX="62.0" layoutY="67.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" selected="true" VBox.vgrow="SOMETIMES">
+                                             <VBox.margin>
+                                                 <Insets left="10.0" top="10.0" />
+                                             </VBox.margin>
+                                         </CheckBox>
+                                         <CheckBox fx:id="soundMuteCheck" alignment="CENTER" layoutX="63.0" layoutY="174.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT">
+                                             <VBox.margin>
+                                                 <Insets left="10.0" top="10.0" />
+                                             </VBox.margin>
+                                         </CheckBox>
+                                         <CheckBox fx:id="musicMuteCheck" alignment="CENTER" layoutX="62.0" layoutY="36.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" VBox.vgrow="SOMETIMES">
+                                             <VBox.margin>
+                                                 <Insets left="10.0" top="10.0" />
+                                             </VBox.margin>
+                                         </CheckBox>
+                                         <Slider fx:id="musicSlider" layoutX="54.0" layoutY="93.0" majorTickUnit="0.5" max="1.0" minorTickCount="5" prefHeight="33.0" prefWidth="182.0" snapToTicks="true" value="1.0">
+                                             <padding>
+                                                 <Insets left="10.0" right="10.0" />
+                                             </padding>
+                                         </Slider>
+                                         <Slider fx:id="soundSlider" layoutX="57.0" layoutY="206.0" majorTickUnit="0.5" max="1.0" minorTickCount="5" prefHeight="33.0" prefWidth="182.0" snapToTicks="true" value="1.0">
+                                             <padding>
+                                                 <Insets left="10.0" right="10.0" />
+                                             </padding>
+                                         </Slider>
+                                         <ImageView fitHeight="33.0" fitWidth="45.0" layoutX="9.0" layoutY="61.0">
+                                             <image>
+                                                 <Image url="@../../Icons/loop.png" />
+                                             </image>
+                                         </ImageView>
+                                         <ImageView fitHeight="30.0" fitWidth="45.0" layoutX="12.0" layoutY="168.0">
+                                             <image>
+                                                 <Image url="@../../Icons/mute.png" />
+                                             </image>
+                                         </ImageView>
+                                         <ImageView fitHeight="30.0" fitWidth="45.0" layoutX="9.0" layoutY="30.0">
+                                             <image>
+                                                 <Image url="@../../Icons/mute.png" />
+                                             </image>
+                                         </ImageView>
+                                         <ImageView fitHeight="29.0" fitWidth="46.0" layoutX="12.0" layoutY="209.0">
+                                             <image>
+                                                 <Image url="@../../Icons/volume.png" />
+                                             </image>
+                                         </ImageView>
+                                         <ImageView fitHeight="29.0" fitWidth="46.0" layoutX="10.0" layoutY="97.0">
+                                             <image>
+                                                 <Image url="@../../Icons/volume.png" />
+                                             </image>
+                                         </ImageView>
+                                     </children>
+                                     <padding>
+                                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                     </padding>
+                                 </Pane>
+                             </children>
+                         </VBox>
+                     </content>
+                 </TitledPane>
+         </children>
+      </VBox>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <TitledPane animated="false" collapsible="false" prefWidth="200.0" text="Video Settings" textAlignment="CENTER">
+               <content>
+                  <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="631.0" prefWidth="298.0" styleClass="vbox" stylesheets="@../../css/soundMenu.css">
+                     <children>
+                        <Pane style="-fx-background-color: gray;" styleClass="pane" stylesheets="@../../css/soundMenu.css">
+                           <children>
+                              <VBox>
+                                 <children>
+                                    <Label text="Window Resolution ">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="10.0" top="10.0" />
+                                       </padding>
+                                    </Label>
+                                    <ChoiceBox fx:id="resolutionBox" prefWidth="150.0"></ChoiceBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </Pane>
+                     </children></VBox>
+               </content>
+            </TitledPane>
+         </children>
+      </VBox>
+   </children>
+</GridPane>

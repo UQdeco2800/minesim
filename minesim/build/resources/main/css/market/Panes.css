@@ -1,0 +1,31 @@
+
+.container {
+    -fx-background-image: url('../../Icons/menuBackgroundTile_x60.png');
+    -fx-effect: dropshadow(gaussian,black,  10, 0.3, 5, 5);
+}
+
+.context {
+    -fx-background-color: rgba(255, 253, 233, 0.2);
+    -fx-background-radius: 10;
+}
+
+.sellItems {
+    -fx-start-margin: 10px;
+    -fx-end-margin: 10px;
+    -fx-padding: 0,0,20px,0;
+    -fx-pref-height: 100;
+    -fx-background-image: url('../../Icons/menuBackgroundTile_x60.png');
+    -fx-background-color: black;
+    -fx-border-color: #E1C31A;
+    -fx-border-width: 1px  ;
+}
+
+
+.hboxContainer {
+    -fx-start-margin: 30px;
+    -fx-end-margin: 30px;
+}
+
+.sellContainer {
+    -fx-pref-height: 50;
+}

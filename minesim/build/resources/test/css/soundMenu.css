@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Super Retro M54';
+    src:url('../Fonts/Super_Retro_M54.ttf');
+}
+
+.vbox {
+	-fx-background-image: url('../Icons/menuBackgroundTile_x60.png');
+    -fx-border-color: black;
+}
+
+.hbox {
+	-fx-background-image: url('../Icons/menuBackgroundTile_x60.png');
+    -fx-border-color: black;
+    -fx-effect:  innershadow(gaussian, rgba(0,0,0,0.5), 20,0.1,0,0);
+
+}
+
+.pane {
+	-fx-background-image: url('../Icons/soundMenuBackgroundTile_x60.png');
+    -fx-border-color: black;
+    -fx-effect:  innershadow(gaussian, rgba(0,0,0,0.5), 20,0.1,0,0);
+}

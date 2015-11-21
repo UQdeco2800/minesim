@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<VBox stylesheets="@defaultContext.css" xmlns="http://javafx.com/javafx/8.0.40"
+      xmlns:fx="http://javafx.com/fxml/1"
+      id="vbox"
+      fx:controller="minesim.contexts.defaultContextController">
+    <Label fx:id="defaultLabel" text="Hi there! This is blue tinged box is for
+you to use! You should check out Issue #62 on Github to read more about it.
+It's perfect for inventories or options relating to specific entities.
+If you want to chat about it and suggest more things talk to @cavejay on Slack"/>
+    <Button fx:id="linkButton" text="Go there now"/>
+</VBox>

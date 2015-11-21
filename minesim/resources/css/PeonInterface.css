@@ -1,0 +1,41 @@
+.Tilepane {
+    -fx-background-image: url('../Icons/menuBackgroundTile_x60.png');
+    -fx-background-color: rgba(0,0,0,0);
+}
+
+.Scrollpane {
+    -fx-background-color: rgba(0,0,0,1);
+}
+
+.Button {
+     -fx-background-color: 
+        #090a0c,
+        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+        linear-gradient(#20262b, #73481d),
+        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));
+        
+    -fx-background-radius: 5,4,3,5;
+    -fx-background-insets: 0,1,2,0;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    
+    -fx-cursor: hand;
+    -fx-font-family: 'Super Retro M54';
+    -fx-font-size: 10px;
+    -fx-text-fill: white;
+}
+
+.Button:pressed {
+    -fx-background-color: grey;
+}
+
+.Button: selected {
+	-fx-background-color: rgba(0,0,0,1);
+}
+
+.Button: hover {
+    -fx-effect:  innershadow(gaussian, white, 20,0.1,0,0);
+}
+
+#gridButton {
+	-fx-background-color: rgba(0,0,0,0.1);
+}

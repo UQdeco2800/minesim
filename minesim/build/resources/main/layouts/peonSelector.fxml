@@ -1,0 +1,117 @@
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.text.*?>
+<Pane xmlns="http://javafx.com/javafx/8.0.40"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="minesim.controllers.PeonSelectorController">
+    <Pane nodeOrientation="RIGHT_TO_LEFT" prefHeight="50.0"
+          prefWidth="425.0">
+        <children>
+            <TilePane id="TilePane"
+                      stylesheets="@../css/PeonInterface.css">
+                <children>
+                    <ToggleButton fx:id="toggleAllGatherers"
+                    			  text="5"
+                                  contentDisplay="TOP"
+                                  mnemonicParsing="false"
+                                  onAction="#selectGatherers"
+                                  prefWidth="60.0"
+                                  styleClass="Button">
+                        <graphic>
+                            <ImageView fitHeight="30"
+                                       fitWidth="30">
+                                <image>
+                                    <Image url="@../PeonGather.png"/>
+                                </image>
+                            </ImageView>
+                        </graphic>
+                        <tooltip>
+                            <Tooltip text="Select Gatherers"/>
+                        </tooltip>
+                    </ToggleButton>
+                    <ToggleButton fx:id="toggleAllGuards"
+                    			  text="4"
+                                  contentDisplay="TOP"
+                                  mnemonicParsing="false"
+                                  onAction="#selectGuards"
+                                  prefWidth="60.0"
+                                  styleClass="Button">
+                        <graphic>
+                            <ImageView fitHeight="30"
+                                       fitWidth="30">
+                                <image>
+                                    <Image url="@../PeonGuard.png"/>
+                                </image>
+                            </ImageView>
+                        </graphic>
+                        <tooltip>
+                            <Tooltip text="Select Guards"/>
+                        </tooltip>
+                    </ToggleButton>
+                    <ToggleButton fx:id="toggleAllMiners"
+                    			  text="3"
+                                  contentDisplay="TOP"
+                                  mnemonicParsing="false"
+                                  onAction="#selectMiners"
+                                  prefWidth="60.0"
+                                  styleClass="Button">
+                        <graphic>
+                            <ImageView fitHeight="30"
+                                       fitWidth="30">
+                                <image>
+                                    <Image url="@../PeonMiner.png"/>
+                                </image>
+                            </ImageView>
+                        </graphic>
+                        <tooltip>
+                            <Tooltip text="Select Miners"/>
+                        </tooltip>
+                    </ToggleButton>
+                    <ToggleButton fx:id="toggleAllIdle"
+                    			  text="2"
+                                  contentDisplay="TOP"
+                                  mnemonicParsing="false"
+                                  onAction="#selectIdle"
+                                  prefWidth="60.0"
+                                  styleClass="Button">
+                        <graphic>
+                            <ImageView Rotate="10"
+                                       fitHeight="30"
+                                       fitWidth="30">
+                                <image>
+                                    <Image url="@../IdlePeon.png"/>
+                                </image>
+                            </ImageView>
+                        </graphic>
+                        <tooltip>
+                            <Tooltip text="Select Idle Peons"/>
+                        </tooltip>
+                    </ToggleButton>
+                    <ToggleButton fx:id="toggleAllPeons"
+                    			  text="1"
+                                  contentDisplay="TOP"
+                                  mnemonicParsing="false"
+                                  onAction="#selectAllPeons"
+                                  prefWidth="60.0"
+                                  styleClass="Button">
+                        <graphic>
+                            <ImageView fitHeight="30"
+                                       fitWidth="30">
+                                <image>
+                                    <Image url="@../SelectAll.png"/>
+                                </image>
+                            </ImageView>
+                        </graphic>
+                        <tooltip>
+                            <Tooltip text="Select All Peons"/>
+                        </tooltip>
+                    </ToggleButton>
+                </children>
+            </TilePane>
+        </children>
+    </Pane>
+</Pane>

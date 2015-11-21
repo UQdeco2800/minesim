@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="minesim.ItemTests" tests="9" skipped="0" failures="0" errors="0" timestamp="2015-11-21T05:21:30" hostname="Tims-Retina-MacBook-Pro.local" time="0.302">
+  <properties/>
+  <testcase name="testItemConstructor" classname="minesim.ItemTests" time="0.0"/>
+  <testcase name="testGetItemType" classname="minesim.ItemTests" time="0.0"/>
+  <testcase name="testOtherMethods" classname="minesim.ItemTests" time="0.001"/>
+  <testcase name="testGetPeonClass" classname="minesim.ItemTests" time="0.0"/>
+  <testcase name="testHealthMethods" classname="minesim.ItemTests" time="0.0"/>
+  <testcase name="testStackLimitMethods" classname="minesim.ItemTests" time="0.0"/>
+  <testcase name="testDurabilityMethods" classname="minesim.ItemTests" time="0.0"/>
+  <testcase name="testIsDeadMethod" classname="minesim.ItemTests" time="0.0"/>
+  <testcase name="testDeleteItem" classname="minesim.ItemTests" time="0.298"/>
+  <system-out><![CDATA[minesim.tiles.TileGridManager Generated world of 14 x 12 chunks
+Cleaning up 1 dead entities
+    testItem
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

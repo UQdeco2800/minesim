@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import java.net.URL?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="minesim.controllers.InstructionsController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <VBox layoutX="10.0" layoutY="10.0">
+         <children>
+                 <TitledPane animated="false" collapsible="false" graphicTextGap="0.0" prefHeight="400.0" prefWidth="599.0" stylesheets="@../../css/menu.css" text="Instructions" textAlignment="CENTER">
+                     <content>
+                         <VBox prefHeight="631.0" prefWidth="289.0" styleClass="vbox" stylesheets="@../../css/soundMenu.css">
+                             <children>
+                        <ScrollPane prefHeight="343.0" prefWidth="576.0" style="-fx-background-color: rgba(192,192,192,0.3); -fx-border-color: gray; -fx-background-insets: none;" styleClass="pane" stylesheets="@../../css/soundMenu.css">
+                           <content>
+                              <TextArea prefHeight="338.0" prefWidth="559.0" text="Note: Will actually be legit instructions, but getting the basic controls for github in first.&#10;&#10;--&gt; GAME CONTROLS&#10;&#10;1. Peon JUMP: Left click to select + W&#10;&#10;2. Peon ESCAPE ROAP: Left click to select + E&#10;&#10;3. Peon DIG: Left click to select + D&#10;&#10;4. Peon MOVE/ACTION: Left click to select + RIGHT CLICK&#10;&#10;4. Open PAUSE MENU: ESC, SPACEBAR&#10;&#10;&#10;--&gt; CAMERA CONTROL&#10;&#10;1. position mouse near the left and right and top and bottom edges of the canvas to move the camera.&#10;&#10;--&gt; KEYS&#10;&#10;1 = select all peons&#10;&#10;2 = select all idle peons&#10;&#10;3 = select all miner peons&#10;&#10;4 = select all guard peons&#10;&#10;5 = select all gatherer peons&#10;" wrapText="true" />
+                           </content>
+                        </ScrollPane>
+                             </children>
+                         </VBox>
+                     </content>
+                 </TitledPane>
+         </children>
+      </VBox>
+   </children>
+</GridPane>
