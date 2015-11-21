@@ -1,6 +1,6 @@
 allprojects {
     group = 'deco2800-2015-mine'
-    version = '0.1'
+    version = '0.2'
 
 }
 
@@ -50,7 +50,7 @@ subprojects {
 
     repositories {
       mavenLocal()
-        maven { url 'http://deco2800-artifactory.uqcloud.net/artifactory/libs-release/' }
+      maven { url 'http://deco2800-artifactory.uqcloud.net/artifactory/libs-release/' }
     }
 
     dependencies {
@@ -62,9 +62,6 @@ subprojects {
 
         // Marketplace integration
         compile group: 'deco2800-2015-marketplace', name: 'common', version: '0.+'
-        
-        // Jenkins fix
-        jenkinsPlugins 'org.jenkins-ci.plugins:matrix-project:1.4@jar'
         
         // Unit testing with JUnit
         testCompile group: 'org.hamcrest', name: 'hamcrest-core', version: '1.3'
