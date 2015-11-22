@@ -29,6 +29,8 @@ build
 DecoWorldDB/
 decoworld.vanilla/resources/Thumbs.db
 /bin
+*.dat
+*.ctrl
 
 
 # Merge conflicts
