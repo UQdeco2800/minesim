@@ -23,7 +23,7 @@ public class AchievementDatabaseHandler {
      */
     private static final Logger logger = LoggerFactory.getLogger(AchievementDatabaseHandler.class);
 
-    private static String dbURL = "jdbc:derby:decoMineAchievmentDb;create=true;user=decomine;password=decomine";
+    private static String dbURL = "jdbc:derby:decoMineDB;create=true;user=decomine;password=decomine";
 
     // jdbc Connection
     private static Connection conn = null;
@@ -66,9 +66,13 @@ public class AchievementDatabaseHandler {
      */
     public static void createplayerStatsTable() {
         try {
+            if( conn == null ){
+                logger.error("No database connection.");
+                return;
+            }
+            
             Statement sta = conn.createStatement();
-            sta.executeUpdate(
-                    "CREATE TABLE playerStats (rockCounter INT)");
+            sta.executeUpdate("CREATE TABLE playerStats (rockCounter INT)");
             logger.debug("Table rocks created.");
             sta.close();
             conn.close();

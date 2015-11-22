@@ -45,7 +45,6 @@ public class DatabaseHandler {
             Class.forName("org.apache.derby.jdbc.EmbeddedDriver").newInstance();
             conn = DriverManager.getConnection(dbURL);
         } catch (Exception except) {
-
             logger.error("Create database connection failed", except);
             instance = null;
         }

@@ -311,15 +311,12 @@ public class Peon extends Stats implements HasName {
 			return 1;
 		} else if (getCurrentTask().isPresent()) {
 			// This Peon has a task
-			if ((this.getAnnoyance() - this.getHappiness()) > (((int) (Math
-					.random() * 1000)) + 250)) {
+			if ((this.getAnnoyance() - this.getHappiness()) > (((int) (Math.random() * 1000)) + 250)) {
 				this.getCurrentTask().get().switchActiveFlag();
 				this.updateTask(Optional.<Task> empty());
 				NotificationManager.notify(this.getName()
 						+ " is annoyed and stopped working!");
-				this.notificationList.add(this.getName()
-						+ " is annoyed and stopped working!");
-
+				this.notificationList.add(this.getName() + " is annoyed and stopped working!");
 				annoyanceFg = 1000;
 			} else {
 				getCurrentTask().get().doTask();
