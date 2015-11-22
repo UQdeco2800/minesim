@@ -36,6 +36,7 @@ subprojects {
     apply plugin: 'jacoco';
     apply plugin: 'checkstyle';
     apply plugin: 'application';
+    apply plugin: 'groovy'
 
     checkstyle {
         toolVersion = "6.5"
