@@ -401,8 +401,7 @@ public class peonStatusContextController implements Initializable {
 		strLabel.setText(Integer.toString(peon.getStrength()));
 		speedLabel.setText(Integer.toString(peon.getSpeed()));
 		luckLabel.setText(Integer.toString(peon.getLuck()));
-		expLabel.setText(Integer.toString(peon.getExperience()) + "/"
-				+ Integer.toString(peon.experienceRequired()));
+		expLabel.setText(Integer.toString(peon.getExperience()) + "/" + Integer.toString(peon.experienceRequired()));
 		lvlLabel.setText(Integer.toString(peon.getLevel()));
 		classLabel.setText(peon.getClass().toString());
 		// Stat bar
