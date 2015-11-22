@@ -106,11 +106,9 @@ public class DigTile extends Task {
 		// Subtract health from shovel, based on its durability, after each
 		// "dig"
 		getPeon()
-				.getInventory()
-				.getDiggingTool("shovel")
-				.subtractHealth(
-						(int) ((100 - getPeon().getInventory()
-								.getDiggingTool("shovel").getDurability()) * 0.1));
+                .getInventory()
+                .getDiggingTool("shovel")
+                .subtractHealth((int) ((100 - getPeon().getInventory().getDiggingTool("shovel").getDurability()) * 0.1));
 		logger.debug("Shovel health is "
 				+ getPeon().getInventory().getDiggingTool("shovel").getHealth());
 		// If a peon's digging tool's health falls below zero, reset to 100

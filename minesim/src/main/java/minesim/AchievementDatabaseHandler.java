@@ -145,28 +145,28 @@ public class AchievementDatabaseHandler {
         String type = null;
         if (this.rockCount == 50) {
             type = "rock50";
-            World.getInstance().addEntityToWorld(new Achievement(100, 100, 80, 480, type));
+            World.getInstance().addAchievmentToWorld(new Achievement(100, 100, 80, 480, type));
             AchievementTracker.achievementHappened();
         } else if (this.rockCount == 20) {
             type = "rock20";
-            World.getInstance().addEntityToWorld(new Achievement(100, 100, 80, 480, type));
+            World.getInstance().addAchievmentToWorld(new Achievement(100, 100, 80, 480, type));
             AchievementTracker.achievementHappened();
         } else if (this.rockCount == 1) {
             type = "rock1";
-            World.getInstance().addEntityToWorld(new Achievement(100, 100, 80, 480, type));
+            World.getInstance().addAchievmentToWorld(new Achievement(100, 100, 80, 480, type));
             AchievementTracker.achievementHappened();
         }
         if (this.zombieKilled == 1){
         	type = "zombie1";
-        	World.getInstance().addEntityToWorld(new Achievement(100, 100, 80, 480, type));
+        	World.getInstance().addAchievmentToWorld(new Achievement(100, 100, 80, 480, type));
             AchievementTracker.achievementHappened();
         } else if (this.zombieKilled == 20){
         	type = "zombie20";
-        	World.getInstance().addEntityToWorld(new Achievement(100, 100, 80, 480, type));
+        	World.getInstance().addAchievmentToWorld(new Achievement(100, 100, 80, 480, type));
             AchievementTracker.achievementHappened();
         } else if (this.zombieKilled == 50){
         	type = "zombie50";
-        	World.getInstance().addEntityToWorld(new Achievement(100, 100, 80, 480, type));
+        	World.getInstance().addAchievmentToWorld(new Achievement(100, 100, 80, 480, type));
             AchievementTracker.achievementHappened();
         }
     }

@@ -31,7 +31,7 @@ public class WorldEntity {
     int currentGravity;
     private Logger logger = Logger.getLogger(WorldEntity.class);
     // Position along the world
-    private int xpos = 0;
+    public int xpos = 0;
     private ConcurrentLinkedDeque<Class> collisionIgnored = new ConcurrentLinkedDeque<Class>();
     private Color objectcolor = Color.BLACK;
     private Boolean shouldhavegravity = Boolean.TRUE;

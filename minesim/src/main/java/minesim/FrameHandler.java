@@ -1,8 +1,5 @@
 package minesim;
 
-import java.awt.geom.Rectangle2D;
-import java.util.concurrent.ConcurrentLinkedDeque;
-
 import javafx.animation.AnimationTimer;
 import javafx.scene.Group;
 import javafx.scene.canvas.GraphicsContext;
@@ -10,16 +7,14 @@ import javafx.scene.image.Image;
 import javafx.scene.paint.Color;
 import javafx.scene.paint.RadialGradient;
 import minesim.buffs.Buff;
-import minesim.entities.HasName;
-import minesim.entities.HasTiredness;
-import minesim.entities.WorldEntity;
-import minesim.inputhandlers.*;
-import minesim.tiles.TileGridManager;
-import minesim.entities.ElevatorShaft;
+import minesim.entities.*;
 import minesim.entities.items.Elevator;
 import minesim.entities.items.Ladder;
 import minesim.entities.items.Rope;
 import minesim.entities.items.properties.HasHealth;
+
+import java.awt.geom.Rectangle2D;
+import java.util.concurrent.ConcurrentLinkedDeque;
 
 public class FrameHandler extends AnimationTimer {
 
@@ -64,8 +59,8 @@ public class FrameHandler extends AnimationTimer {
      */
     public void stickyCamIcon(boolean visible) {
     	if (visible) {
-        	graphicscontext.drawImage(new Image("Icons/stickyCamera.png"), graphicscontext.getCanvas().getWidth()*0.9,5);
-        	}
+            graphicscontext.drawImage(new Image("Icons/stickyCamera.png"), graphicscontext.getCanvas().getWidth()*0.9,5);
+        }
     }
 
     private void renderFPS() {
@@ -94,6 +89,24 @@ public class FrameHandler extends AnimationTimer {
         Rectangle2D rectangle = mainworld.getScreenArea();
         graphicscontext.fillRect(rectangle.getX(), rectangle.getY(),
                 rectangle.getWidth(), rectangle.getHeight());
+    }
+    
+    private void renderAchievments(){
+        for(WorldEntity e : World.getInstance().achievments){
+            if( !(e instanceof Achievement)){
+                World.getInstance().achievments.remove(e);
+                continue;
+            }
+
+            if (e.image.isPresent()) {
+                double width = graphicscontext.getCanvas().getWidth();
+                graphicscontext.setGlobalAlpha(((Achievement) e).getRemainingTime()/100f);
+                graphicscontext.drawImage(new Image(e.image.get()), (width - e.width)/2, 10, e.width, e.height);
+                graphicscontext.setGlobalAlpha(1);
+            }
+
+            e.onTick();
+        }
     }
     
 
@@ -208,6 +221,8 @@ public class FrameHandler extends AnimationTimer {
                 mainworld.removeEntityFromWorld(entity);
             }
         }
+        
+        renderAchievments();
         renderFPS();
         renderTime();
     }

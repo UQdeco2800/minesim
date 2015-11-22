@@ -19,7 +19,7 @@ import minesim.entities.PeonGuard;
 import minesim.entities.PeonMiner;
 import minesim.entities.RequisitionStore;
 import minesim.entities.WorldEntity;
-import minesim.entities.ZombieMob;
+import minesim.entities.*;
 import minesim.entities.items.Ladder;
 import minesim.entities.items.Rope;
 import minesim.inputhandlers.SelectionBox;
@@ -62,6 +62,8 @@ public class World {
      * A world has a big list of all its entities
      */
     private ConcurrentLinkedDeque<WorldEntity> worldentities = new ConcurrentLinkedDeque<WorldEntity>();
+    
+    public ConcurrentLinkedDeque<WorldEntity> achievments = new ConcurrentLinkedDeque<>();
     /*
      * a World has a list of assigned tasks
      */
@@ -152,8 +154,18 @@ public class World {
         } else {
             worldentities.addLast(entity);
         }
-
     }
+    
+    /**
+     * Adds an achivement to the world in the correct position
+     * @param achievment 
+     */
+    public void addAchievmentToWorld(Achievement achievment) {
+        if(achievment == null){
+            return;
+        }
+        achievments.add(achievment);
+   }
 
     public void setCanvas(ResizableCanvas canvas) {
         this.canvas = canvas;

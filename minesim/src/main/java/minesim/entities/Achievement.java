@@ -2,8 +2,8 @@ package minesim.entities;
 
 import minesim.World;
 
-public class Achievement extends WorldEntity{
-	//xpos and ypos will not change
+public class Achievement extends WorldEntity {
+    //xpos and ypos will not change
     private String achievementType;
     private String achievementText;
     private String name;
@@ -114,8 +114,12 @@ public class Achievement extends WorldEntity{
     @Override
     public void onTick(){ //removes the achievement from the world in 5 seconds.
     	if(timer == 300){
-    		World.getInstance().removeEntityFromWorld(this);
+    		World.getInstance().achievments.remove(this);
     	}
     	timer += 1; 
+    }
+
+    public int getRemainingTime(){
+        return timer;
     }
 }

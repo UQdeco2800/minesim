@@ -56,8 +56,8 @@ public class Peon extends Stats implements HasName {
 
 	/**
 	 * The tick delay of a peon. Can only perform  an action after this many ticks have
-     * passed, effective number can be reduced by speed stat, and increased by
-     * tiredness
+         * passed, effective number can be reduced by speed stat, and increased by
+         * tiredness
 	 */
 	private int tickDelay = 7;
 
@@ -213,6 +213,8 @@ public class Peon extends Stats implements HasName {
 		addCollisionIgnoredClass(Rope.class);
 		addCollisionIgnoredClass(Elevator.class);
 		addCollisionIgnoredClass(RequisitionStore.class);
+                
+                this.notificationList = new ArrayList<>();
 	}
 
 	/**
@@ -292,8 +294,8 @@ public class Peon extends Stats implements HasName {
 	 * (task cancelled/is not present)
 	 * 
 	 * Peons won't do a task a certain number of ticks have passed the
-     * number of ticks to wait is 7, but this number is influenced by
-     * tiredness and speed
+         * number of ticks to wait is 7, but this number is influenced by
+         * tiredness and speed
 	 */
 	private int attemptTask() {
 		if (this.annoyanceFg > 0) {
@@ -314,8 +316,7 @@ public class Peon extends Stats implements HasName {
 			if ((this.getAnnoyance() - this.getHappiness()) > (((int) (Math.random() * 1000)) + 250)) {
 				this.getCurrentTask().get().switchActiveFlag();
 				this.updateTask(Optional.<Task> empty());
-				NotificationManager.notify(this.getName()
-						+ " is annoyed and stopped working!");
+				NotificationManager.notify(this.getName() + " is annoyed and stopped working!");
 				this.notificationList.add(this.getName() + " is annoyed and stopped working!");
 				annoyanceFg = 1000;
 			} else {
