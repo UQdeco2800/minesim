@@ -1,7 +1,5 @@
 package minesim;
 
-import java.net.URL;
-
 import javafx.application.Application;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
@@ -13,6 +11,8 @@ import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 import minesim.inputhandlers.KeyboardHandler;
+
+import java.net.URL;
 
 //Jenkins #500 aww yeah
 public class MineSim extends Application {
@@ -45,7 +45,9 @@ public class MineSim extends Application {
     public void start(Stage primaryStage) throws Exception {
         org.apache.log4j.BasicConfigurator.configure();
 
-        Parent root = FXMLLoader.load(getClass().getResource("/layouts/SplashScreen.fxml"));
+        URL fxml_pane = getClass().getResource("/layouts/SplashScreen.fxml");
+
+        Parent root = FXMLLoader.load(fxml_pane);
 
         root.setOnKeyPressed(KeyboardHandler.getInstance());
 
