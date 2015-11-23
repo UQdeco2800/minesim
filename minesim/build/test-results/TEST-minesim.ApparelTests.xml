@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="minesim.ApparelTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2015-11-23T02:47:00" hostname="James-PC" time="0.091">
-  <properties/>
-  <testcase name="testImageFileExists" classname="minesim.ApparelTests" time="0.088"/>
-  <testcase name="testApparelConstructor" classname="minesim.ApparelTests" time="0.001"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

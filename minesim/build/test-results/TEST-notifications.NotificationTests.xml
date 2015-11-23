@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="notifications.NotificationTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2015-11-23T02:47:38" hostname="James-PC" time="0.0">
-  <properties/>
-  <testcase name="hashTest" classname="notifications.NotificationTests" time="0.0"/>
-  <testcase name="equalsTest" classname="notifications.NotificationTests" time="0.0"/>
-  <testcase name="creationTest" classname="notifications.NotificationTests" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

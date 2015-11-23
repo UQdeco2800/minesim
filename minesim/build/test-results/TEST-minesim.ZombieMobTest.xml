@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="minesim.ZombieMobTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2015-11-23T02:47:31" hostname="James-PC" time="0.0">
-  <properties/>
-  <testcase name="testZombieMobInitial" classname="minesim.ZombieMobTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
