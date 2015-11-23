@@ -1,13 +1,9 @@
 package minesim;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.sql.*;
 
 /**
  * A class to deal with database operations pertaining to user login. These are
@@ -70,8 +66,9 @@ public final class LoginDatabaseHandler {
 	public static boolean checkLogin(String username, String password) {
 		// Establish the initial connection
 		getInstance();
+
 		// The SQL query to be executed
-		String sqlQuery = "SELECT USERNAME FROM LOGIN WHERE USERNAME = ? AND " + "PASSWORD = ?";
+		String sqlQuery = "SELECT USERNAME FROM LOGIN WHERE USERNAME = ? AND PASSWORD = ?";
 		try {
 			PreparedStatement stmt = conn.prepareStatement(sqlQuery);
 			// Fills in the blanks for the query to be executed
@@ -92,9 +89,35 @@ public final class LoginDatabaseHandler {
 			}
 		} catch (SQLException e) {
 			LOGGER.error("Unable to execute login check ", e);
+            createLoginTable();
 		}
 		return false;
 	}
+
+    private static void createLoginTable() {
+        getInstance();
+
+        String sql = "CREATE TABLE LOGIN (USERNAME varchar(255), PASSWORD varchar(255), MUTEMUSIC BOOLEAN, LOOPMUSIC BOOLEAN, MUTESFX BOOLEAN, MUSICVALUE DOUBLE, SFXVOLUME DOUBLE, RESOLUTIONWIDTH INTEGER, RESOLUTIONHEIGHT INTEGER, DEBUG BOOLEAN)";
+
+        Statement st = null;
+        try {
+            st = conn.createStatement();
+            st.execute(sql);
+        } catch (SQLException e) {
+            LOGGER.error("Severe database error");
+        }
+    }
+//
+//    stmt.setString(1, username);
+//    stmt.setString(2, password);
+//    stmt.setBoolean(3, muteMusicState);
+//    stmt.setBoolean(4, loopMusicState);
+//    stmt.setBoolean(5, muteSFXState);
+//    stmt.setDouble(6, volumeMusicValue);
+//    stmt.setDouble(7, volumeSFXValue);
+//    stmt.setInt(8, resolutionWidth);
+//    stmt.setInt(9, resolutionHeight);
+//    stmt.setBoolean(10, debugState);
 
 	/**
 	 * A public function which updates the contents of the data according to the
