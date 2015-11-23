@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="minesim.DigTileTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2015-11-22T10:05:51" hostname="Tims-Retina-MacBook-Pro.local" time="0.851">
-  <properties/>
-  <testcase name="testBoundary" classname="minesim.DigTileTests" time="0.851"/>
-  <system-out><![CDATA[minesim.tiles.TileGridManager Generated world of 14 x 12 chunks
-minesim.tiles.TileGridManager Changed tile at (0, 1) from Air to Dirt
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

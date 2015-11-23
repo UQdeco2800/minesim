@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="minesim.ApparelTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2015-11-22T10:05:44" hostname="Tims-Retina-MacBook-Pro.local" time="0.024">
-  <properties/>
-  <testcase name="testImageFileExists" classname="minesim.ApparelTests" time="0.021"/>
-  <testcase name="testApparelConstructor" classname="minesim.ApparelTests" time="0.003"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
