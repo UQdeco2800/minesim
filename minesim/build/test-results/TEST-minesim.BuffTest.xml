@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="minesim.BuffTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2015-11-21T05:21:23" hostname="Tims-Retina-MacBook-Pro.local" time="0.856">
+<testsuite name="minesim.BuffTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2015-11-22T10:05:45" hostname="Tims-Retina-MacBook-Pro.local" time="1.072">
   <properties/>
-  <testcase name="checkBuffwithBeer" classname="minesim.BuffTest" time="0.005"/>
-  <testcase name="checkBeerEffects" classname="minesim.BuffTest" time="0.399"/>
-  <testcase name="checkGymEffects" classname="minesim.BuffTest" time="0.042"/>
-  <testcase name="checkTeleporterSicknessEffects" classname="minesim.BuffTest" time="0.065"/>
-  <testcase name="checkLuckEffects" classname="minesim.BuffTest" time="0.077"/>
-  <testcase name="checkDiseaseEffects" classname="minesim.BuffTest" time="0.011"/>
-  <testcase name="checkNoodleEffects" classname="minesim.BuffTest" time="0.061"/>
+  <testcase name="checkBuffwithBeer" classname="minesim.BuffTest" time="0.006"/>
+  <testcase name="checkBeerEffects" classname="minesim.BuffTest" time="0.595"/>
+  <testcase name="checkGymEffects" classname="minesim.BuffTest" time="0.048"/>
+  <testcase name="checkTeleporterSicknessEffects" classname="minesim.BuffTest" time="0.054"/>
+  <testcase name="checkLuckEffects" classname="minesim.BuffTest" time="0.079"/>
+  <testcase name="checkDiseaseEffects" classname="minesim.BuffTest" time="0.014"/>
+  <testcase name="checkNoodleEffects" classname="minesim.BuffTest" time="0.045"/>
   <system-out><![CDATA[minesim.entities.SpriteLoader Your file is not a multiple of your specified sprite size, your sprites will not load correctly.
 java.lang.IllegalArgumentException: Invalid sprite sheet dimensions, make sure your file is a multiple of your specified sprite size.
 	at minesim.entities.SpriteLoader.getSprite(SpriteLoader.java:88)

@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="minesim.AnimationTests" tests="19" skipped="0" failures="0" errors="0" timestamp="2015-11-21T05:21:21" hostname="Tims-Retina-MacBook-Pro.local" time="0.589">
+<testsuite name="minesim.AnimationTests" tests="19" skipped="0" failures="0" errors="0" timestamp="2015-11-22T10:05:43" hostname="Tims-Retina-MacBook-Pro.local" time="0.459">
   <properties/>
-  <testcase name="invalidFramesAnimationInitialisation" classname="minesim.AnimationTests" time="0.376"/>
-  <testcase name="testInvalidStop" classname="minesim.AnimationTests" time="0.028"/>
-  <testcase name="testReset" classname="minesim.AnimationTests" time="0.016"/>
-  <testcase name="testUpdateFinalCoverage" classname="minesim.AnimationTests" time="0.009"/>
-  <testcase name="testValidStart" classname="minesim.AnimationTests" time="0.008"/>
-  <testcase name="testInvalidRestart" classname="minesim.AnimationTests" time="0.019"/>
-  <testcase name="testValidStop" classname="minesim.AnimationTests" time="0.007"/>
-  <testcase name="testUpdateFrameCountGreaterThan" classname="minesim.AnimationTests" time="0.008"/>
-  <testcase name="testUpdateFrameCountGreaterPositiveDirection" classname="minesim.AnimationTests" time="0.007"/>
-  <testcase name="testUpdateFrameCountLessThan" classname="minesim.AnimationTests" time="0.009"/>
-  <testcase name="validSingleAnimationInitialisation" classname="minesim.AnimationTests" time="0.009"/>
-  <testcase name="testInvalidStart2" classname="minesim.AnimationTests" time="0.006"/>
-  <testcase name="testUpdateFrameCountGreaterNegativeDirection" classname="minesim.AnimationTests" time="0.006"/>
-  <testcase name="testValidRestart" classname="minesim.AnimationTests" time="0.014"/>
-  <testcase name="invalidAnimationInitialisation" classname="minesim.AnimationTests" time="0.01"/>
-  <testcase name="notNullGetterMethods" classname="minesim.AnimationTests" time="0.005"/>
-  <testcase name="testInvalidStart" classname="minesim.AnimationTests" time="0.01"/>
-  <testcase name="testInvalidStop2" classname="minesim.AnimationTests" time="0.012"/>
-  <testcase name="validMultipleAnimationsInitialisation" classname="minesim.AnimationTests" time="0.017"/>
+  <testcase name="invalidFramesAnimationInitialisation" classname="minesim.AnimationTests" time="0.273"/>
+  <testcase name="testInvalidStop" classname="minesim.AnimationTests" time="0.014"/>
+  <testcase name="testReset" classname="minesim.AnimationTests" time="0.01"/>
+  <testcase name="testUpdateFinalCoverage" classname="minesim.AnimationTests" time="0.008"/>
+  <testcase name="testValidStart" classname="minesim.AnimationTests" time="0.01"/>
+  <testcase name="testInvalidRestart" classname="minesim.AnimationTests" time="0.013"/>
+  <testcase name="testValidStop" classname="minesim.AnimationTests" time="0.006"/>
+  <testcase name="testUpdateFrameCountGreaterThan" classname="minesim.AnimationTests" time="0.007"/>
+  <testcase name="testUpdateFrameCountGreaterPositiveDirection" classname="minesim.AnimationTests" time="0.008"/>
+  <testcase name="testUpdateFrameCountLessThan" classname="minesim.AnimationTests" time="0.006"/>
+  <testcase name="validSingleAnimationInitialisation" classname="minesim.AnimationTests" time="0.007"/>
+  <testcase name="testInvalidStart2" classname="minesim.AnimationTests" time="0.005"/>
+  <testcase name="testUpdateFrameCountGreaterNegativeDirection" classname="minesim.AnimationTests" time="0.005"/>
+  <testcase name="testValidRestart" classname="minesim.AnimationTests" time="0.02"/>
+  <testcase name="invalidAnimationInitialisation" classname="minesim.AnimationTests" time="0.007"/>
+  <testcase name="notNullGetterMethods" classname="minesim.AnimationTests" time="0.006"/>
+  <testcase name="testInvalidStart" classname="minesim.AnimationTests" time="0.021"/>
+  <testcase name="testInvalidStop2" classname="minesim.AnimationTests" time="0.006"/>
+  <testcase name="validMultipleAnimationsInitialisation" classname="minesim.AnimationTests" time="0.006"/>
   <system-out><![CDATA[minesim.entities.Animation You cannot have null frames.
 java.lang.NullPointerException
 	at minesim.entities.Animation.<init>(Animation.java:54)

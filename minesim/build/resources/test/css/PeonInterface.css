@@ -28,11 +28,11 @@
     -fx-background-color: grey;
 }
 
-.Button: selected {
+.Button:selected {
 	-fx-background-color: rgba(0,0,0,1);
 }
 
-.Button: hover {
+.Button:hover {
     -fx-effect:  innershadow(gaussian, white, 20,0.1,0,0);
 }
 

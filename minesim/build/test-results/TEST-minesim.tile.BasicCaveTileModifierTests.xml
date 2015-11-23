@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="minesim.tile.BasicCaveTileModifierTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2015-11-21T05:21:49" hostname="Tims-Retina-MacBook-Pro.local" time="0.492">
+<testsuite name="minesim.tile.BasicCaveTileModifierTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2015-11-22T10:06:13" hostname="Tims-Retina-MacBook-Pro.local" time="0.484">
   <properties/>
-  <testcase name="testBasicCaveTileModifierConstructor" classname="minesim.tile.BasicCaveTileModifierTests" time="0.251"/>
-  <testcase name="testGetNeighbourWallCount" classname="minesim.tile.BasicCaveTileModifierTests" time="0.241"/>
+  <testcase name="testBasicCaveTileModifierConstructor" classname="minesim.tile.BasicCaveTileModifierTests" time="0.235"/>
+  <testcase name="testGetNeighbourWallCount" classname="minesim.tile.BasicCaveTileModifierTests" time="0.249"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

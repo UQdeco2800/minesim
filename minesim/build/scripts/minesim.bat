@@ -69,7 +69,7 @@ set CMD_LINE_ARGS=%$
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\minesim-0.1.jar;%APP_HOME%\lib\slf4j-api-1.7.12.jar;%APP_HOME%\lib\slf4j-log4j12-1.7.12.jar;%APP_HOME%\lib\derby-10.9.1.0.jar;%APP_HOME%\lib\common-0.7.jar;%APP_HOME%\lib\log4j-1.2.17.jar
+set CLASSPATH=%APP_HOME%\lib\minesim-0.2.jar;%APP_HOME%\lib\slf4j-api-1.7.12.jar;%APP_HOME%\lib\slf4j-log4j12-1.7.12.jar;%APP_HOME%\lib\derby-10.9.1.0.jar;%APP_HOME%\lib\common-0.7.jar;%APP_HOME%\lib\log4j-1.2.17.jar
 
 @rem Execute minesim
 "%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %MINESIM_OPTS%  -classpath "%CLASSPATH%" minesim.MineSim %CMD_LINE_ARGS%

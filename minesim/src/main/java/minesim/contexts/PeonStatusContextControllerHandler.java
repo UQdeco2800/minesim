@@ -3,7 +3,6 @@ package minesim.contexts;
 import minesim.ContextAreaHandler;
 import minesim.entities.Peon;
 import minesim.entities.WorldEntity;
-import minesim.WorldTimer;
 
 /**
  * Created by Michael on 15/10/15. The class for setting the context pane to be
@@ -33,8 +32,7 @@ public class PeonStatusContextControllerHandler {
 	 */
 	public static PeonStatusContextControllerHandler getInstance() {
 		if (instance == null) {
-			instance = new PeonStatusContextControllerHandler(
-					new peonStatusContextController());
+			instance = new PeonStatusContextControllerHandler(new peonStatusContextController());
 		}
 		return instance;
 	}

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="minesim.ItemToolTests" tests="6" skipped="0" failures="0" errors="0" timestamp="2015-11-21T05:21:30" hostname="Tims-Retina-MacBook-Pro.local" time="0.003">
+<testsuite name="minesim.ItemToolTests" tests="6" skipped="0" failures="0" errors="0" timestamp="2015-11-22T10:05:53" hostname="Tims-Retina-MacBook-Pro.local" time="0.006">
   <properties/>
-  <testcase name="testEquipMethods" classname="minesim.ItemToolTests" time="0.0"/>
+  <testcase name="testEquipMethods" classname="minesim.ItemToolTests" time="0.001"/>
   <testcase name="testToolUpgrade" classname="minesim.ItemToolTests" time="0.0"/>
-  <testcase name="testSpeedMethods" classname="minesim.ItemToolTests" time="0.001"/>
+  <testcase name="testSpeedMethods" classname="minesim.ItemToolTests" time="0.0"/>
   <testcase name="testImageFileExists" classname="minesim.ItemToolTests" time="0.0"/>
   <testcase name="testDurabilityMethods" classname="minesim.ItemToolTests" time="0.001"/>
-  <testcase name="testToolConstructor" classname="minesim.ItemToolTests" time="0.0"/>
+  <testcase name="testToolConstructor" classname="minesim.ItemToolTests" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

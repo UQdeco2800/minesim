@@ -1,68 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="minesim.PickUpItemTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2015-11-21T05:21:45" hostname="Tims-Retina-MacBook-Pro.local" time="0.212">
+<testsuite name="minesim.PickUpItemTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2015-11-22T10:06:08" hostname="Tims-Retina-MacBook-Pro.local" time="0.219">
   <properties/>
-  <testcase name="testPickingUpItem" classname="minesim.PickUpItemTests" time="0.004"/>
+  <testcase name="testPickingUpItem" classname="minesim.PickUpItemTests" time="0.003"/>
   <testcase name="testDroppingItem" classname="minesim.PickUpItemTests" time="0.001"/>
   <system-out><![CDATA[minesim.tiles.TileGridManager Generated world of 14 x 12 chunks
 minesim.tiles.TileGridManager Generated world of 14 x 12 chunks
 ]]></system-out>
-  <system-err><![CDATA[Exception in thread "JavaFX Application Thread" java.lang.NullPointerException: Children: child node is null: parent = StackPane@1e99c606
+  <system-err><![CDATA[Exception in thread "JavaFX Application Thread" java.lang.NullPointerException: Children: child node is null: parent = StackPane@339fd88c
 	at javafx.scene.Parent$2.onProposedChange(Parent.java:431)
 	at com.sun.javafx.collections.VetoableListDecorator.add(VetoableListDecorator.java:206)
 	at minesim.ContextAreaHandler$1.run(ContextAreaHandler.java:127)
 	at com.sun.javafx.application.PlatformImpl.lambda$null$164(PlatformImpl.java:292)
-	at com.sun.javafx.application.PlatformImpl$$Lambda$56/1540405797.run(Unknown Source)
+	at com.sun.javafx.application.PlatformImpl$$Lambda$56/704031901.run(Unknown Source)
 	at java.security.AccessController.doPrivileged(Native Method)
 	at com.sun.javafx.application.PlatformImpl.lambda$runLater$165(PlatformImpl.java:291)
-	at com.sun.javafx.application.PlatformImpl$$Lambda$54/1428592870.run(Unknown Source)
+	at com.sun.javafx.application.PlatformImpl$$Lambda$54/1466161724.run(Unknown Source)
 	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:77)
 	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:47)
 	at java.lang.Thread.run(Thread.java:745)
-Exception in thread "JavaFX Application Thread" java.lang.NullPointerException: Children: child node is null: parent = StackPane@1e99c606
+Exception in thread "JavaFX Application Thread" java.lang.NullPointerException: Children: child node is null: parent = StackPane@339fd88c
 	at javafx.scene.Parent$2.onProposedChange(Parent.java:431)
 	at com.sun.javafx.collections.VetoableListDecorator.add(VetoableListDecorator.java:206)
 	at minesim.ContextAreaHandler$1.run(ContextAreaHandler.java:127)
 	at com.sun.javafx.application.PlatformImpl.lambda$null$164(PlatformImpl.java:292)
-	at com.sun.javafx.application.PlatformImpl$$Lambda$56/1540405797.run(Unknown Source)
+	at com.sun.javafx.application.PlatformImpl$$Lambda$56/704031901.run(Unknown Source)
 	at java.security.AccessController.doPrivileged(Native Method)
 	at com.sun.javafx.application.PlatformImpl.lambda$runLater$165(PlatformImpl.java:291)
-	at com.sun.javafx.application.PlatformImpl$$Lambda$54/1428592870.run(Unknown Source)
+	at com.sun.javafx.application.PlatformImpl$$Lambda$54/1466161724.run(Unknown Source)
 	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:77)
 	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:47)
 	at java.lang.Thread.run(Thread.java:745)
-Exception in thread "JavaFX Application Thread" java.lang.NullPointerException: Children: child node is null: parent = StackPane@1e99c606
+Exception in thread "JavaFX Application Thread" java.lang.NullPointerException: Children: child node is null: parent = StackPane@339fd88c
 	at javafx.scene.Parent$2.onProposedChange(Parent.java:431)
 	at com.sun.javafx.collections.VetoableListDecorator.add(VetoableListDecorator.java:206)
 	at minesim.ContextAreaHandler$1.run(ContextAreaHandler.java:127)
 	at com.sun.javafx.application.PlatformImpl.lambda$null$164(PlatformImpl.java:292)
-	at com.sun.javafx.application.PlatformImpl$$Lambda$56/1540405797.run(Unknown Source)
+	at com.sun.javafx.application.PlatformImpl$$Lambda$56/704031901.run(Unknown Source)
 	at java.security.AccessController.doPrivileged(Native Method)
 	at com.sun.javafx.application.PlatformImpl.lambda$runLater$165(PlatformImpl.java:291)
-	at com.sun.javafx.application.PlatformImpl$$Lambda$54/1428592870.run(Unknown Source)
+	at com.sun.javafx.application.PlatformImpl$$Lambda$54/1466161724.run(Unknown Source)
 	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:77)
 	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:47)
 	at java.lang.Thread.run(Thread.java:745)
-Exception in thread "JavaFX Application Thread" java.lang.NullPointerException: Children: child node is null: parent = StackPane@1e99c606
+Exception in thread "JavaFX Application Thread" java.lang.NullPointerException: Children: child node is null: parent = StackPane@339fd88c
 	at javafx.scene.Parent$2.onProposedChange(Parent.java:431)
 	at com.sun.javafx.collections.VetoableListDecorator.add(VetoableListDecorator.java:206)
 	at minesim.ContextAreaHandler$1.run(ContextAreaHandler.java:127)
 	at com.sun.javafx.application.PlatformImpl.lambda$null$164(PlatformImpl.java:292)
-	at com.sun.javafx.application.PlatformImpl$$Lambda$56/1540405797.run(Unknown Source)
+	at com.sun.javafx.application.PlatformImpl$$Lambda$56/704031901.run(Unknown Source)
 	at java.security.AccessController.doPrivileged(Native Method)
 	at com.sun.javafx.application.PlatformImpl.lambda$runLater$165(PlatformImpl.java:291)
-	at com.sun.javafx.application.PlatformImpl$$Lambda$54/1428592870.run(Unknown Source)
+	at com.sun.javafx.application.PlatformImpl$$Lambda$54/1466161724.run(Unknown Source)
 	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:77)
 	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:47)
 	at java.lang.Thread.run(Thread.java:745)
-Exception in thread "JavaFX Application Thread" java.lang.NullPointerException: Children: child node is null: parent = StackPane@1e99c606
+Exception in thread "JavaFX Application Thread" java.lang.NullPointerException: Children: child node is null: parent = StackPane@339fd88c
 	at javafx.scene.Parent$2.onProposedChange(Parent.java:431)
 	at com.sun.javafx.collections.VetoableListDecorator.add(VetoableListDecorator.java:206)
 	at minesim.ContextAreaHandler$1.run(ContextAreaHandler.java:127)
 	at com.sun.javafx.application.PlatformImpl.lambda$null$164(PlatformImpl.java:292)
-	at com.sun.javafx.application.PlatformImpl$$Lambda$56/1540405797.run(Unknown Source)
+	at com.sun.javafx.application.PlatformImpl$$Lambda$56/704031901.run(Unknown Source)
 	at java.security.AccessController.doPrivileged(Native Method)
 	at com.sun.javafx.application.PlatformImpl.lambda$runLater$165(PlatformImpl.java:291)
-	at com.sun.javafx.application.PlatformImpl$$Lambda$54/1428592870.run(Unknown Source)
+	at com.sun.javafx.application.PlatformImpl$$Lambda$54/1466161724.run(Unknown Source)
 	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:77)
 	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:47)
 	at java.lang.Thread.run(Thread.java:745)
