@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="minesim.events.tracker.MineEventHandlerTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2015-11-21T05:21:47" hostname="Tims-Retina-MacBook-Pro.local" time="0.039">
+<testsuite name="minesim.events.tracker.MineEventHandlerTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2015-11-23T02:47:31" hostname="James-PC" time="0.05">
   <properties/>
-  <testcase name="testRegisterForAllTrackers" classname="minesim.events.tracker.MineEventHandlerTests" time="0.033"/>
+  <testcase name="testRegisterForAllTrackers" classname="minesim.events.tracker.MineEventHandlerTests" time="0.046"/>
   <testcase name="registerToNonEventTracker" classname="minesim.events.tracker.MineEventHandlerTests" time="0.0"/>
   <testcase name="testCheckEvents" classname="minesim.events.tracker.MineEventHandlerTests" time="0.0"/>
-  <testcase name="testUpdate" classname="minesim.events.tracker.MineEventHandlerTests" time="0.004"/>
+  <testcase name="testUpdate" classname="minesim.events.tracker.MineEventHandlerTests" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

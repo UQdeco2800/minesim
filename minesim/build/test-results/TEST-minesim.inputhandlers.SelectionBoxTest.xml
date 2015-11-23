@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="minesim.inputhandlers.SelectionBoxTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2015-11-21T05:21:48" hostname="Tims-Retina-MacBook-Pro.local" time="0.01">
+<testsuite name="minesim.inputhandlers.SelectionBoxTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2015-11-23T02:47:32" hostname="James-PC" time="0.012">
   <properties/>
   <testcase name="testClear" classname="minesim.inputhandlers.SelectionBoxTest" time="0.0"/>
   <testcase name="testContains" classname="minesim.inputhandlers.SelectionBoxTest" time="0.009"/>
   <testcase name="testHashCode" classname="minesim.inputhandlers.SelectionBoxTest" time="0.0"/>
-  <testcase name="testBounds" classname="minesim.inputhandlers.SelectionBoxTest" time="0.001"/>
+  <testcase name="testBounds" classname="minesim.inputhandlers.SelectionBoxTest" time="0.0"/>
   <testcase name="testEquals" classname="minesim.inputhandlers.SelectionBoxTest" time="0.0"/>
   <testcase name="testRectangle" classname="minesim.inputhandlers.SelectionBoxTest" time="0.0"/>
-  <testcase name="testSelectionBoxConstructor" classname="minesim.inputhandlers.SelectionBoxTest" time="0.0"/>
+  <testcase name="testSelectionBoxConstructor" classname="minesim.inputhandlers.SelectionBoxTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

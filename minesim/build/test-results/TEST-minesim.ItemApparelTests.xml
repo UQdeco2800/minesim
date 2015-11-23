@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="minesim.ItemApparelTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2015-11-21T05:21:30" hostname="Tims-Retina-MacBook-Pro.local" time="0.0">
+<testsuite name="minesim.ItemApparelTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2015-11-23T02:47:14" hostname="James-PC" time="0.0">
   <properties/>
   <testcase name="testApparelConstructor" classname="minesim.ItemApparelTests" time="0.0"/>
   <system-out><![CDATA[]]></system-out>

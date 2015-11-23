@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="minesim.inputhandlers.MouseHandlerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2015-11-21T05:21:48" hostname="Tims-Retina-MacBook-Pro.local" time="0.632">
+<testsuite name="minesim.inputhandlers.MouseHandlerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2015-11-23T02:47:32" hostname="James-PC" time="0.616">
   <properties/>
-  <testcase name="testSetFunstion" classname="minesim.inputhandlers.MouseHandlerTest" time="0.214"/>
-  <testcase name="testPadding" classname="minesim.inputhandlers.MouseHandlerTest" time="0.228"/>
-  <testcase name="testRightClickToGroup" classname="minesim.inputhandlers.MouseHandlerTest" time="0.189"/>
+  <testcase name="testSetFunstion" classname="minesim.inputhandlers.MouseHandlerTest" time="0.173"/>
+  <testcase name="testPadding" classname="minesim.inputhandlers.MouseHandlerTest" time="0.244"/>
+  <testcase name="testRightClickToGroup" classname="minesim.inputhandlers.MouseHandlerTest" time="0.199"/>
   <system-out><![CDATA[minesim.tiles.TileGridManager Generated world of 14 x 12 chunks
 minesim.tiles.TileGridManager Generated world of 14 x 12 chunks
 minesim.tiles.TileGridManager Generated world of 14 x 12 chunks

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="minesim.ResizableCanvasTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2015-11-21T05:21:45" hostname="Tims-Retina-MacBook-Pro.local" time="0.007">
+<testsuite name="minesim.ResizableCanvasTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2015-11-23T02:47:30" hostname="James-PC" time="0.006">
   <properties/>
   <testcase name="initTest" classname="minesim.ResizableCanvasTests" time="0.003"/>
   <testcase name="bindTest" classname="minesim.ResizableCanvasTests" time="0.003"/>

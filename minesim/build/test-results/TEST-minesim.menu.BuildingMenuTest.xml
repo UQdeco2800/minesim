@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="minesim.menu.BuildingMenuTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2015-11-21T05:21:48" hostname="Tims-Retina-MacBook-Pro.local" time="0.618">
+<testsuite name="minesim.menu.BuildingMenuTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2015-11-23T02:47:32" hostname="James-PC" time="0.593">
   <properties/>
-  <testcase name="backingTest" classname="minesim.menu.BuildingMenuTest" time="0.496"/>
-  <testcase name="hideShowTest" classname="minesim.menu.BuildingMenuTest" time="0.065"/>
-  <testcase name="initTest" classname="minesim.menu.BuildingMenuTest" time="0.057"/>
+  <testcase name="backingTest" classname="minesim.menu.BuildingMenuTest" time="0.488"/>
+  <testcase name="hideShowTest" classname="minesim.menu.BuildingMenuTest" time="0.05"/>
+  <testcase name="initTest" classname="minesim.menu.BuildingMenuTest" time="0.055"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

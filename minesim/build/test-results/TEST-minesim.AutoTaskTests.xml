@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="minesim.AutoTaskTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2015-11-21T05:21:22" hostname="Tims-Retina-MacBook-Pro.local" time="0.884">
+<testsuite name="minesim.AutoTaskTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2015-11-23T02:47:07" hostname="James-PC" time="0.913">
   <properties/>
-  <testcase name="testAddRemoveTasks" classname="minesim.AutoTaskTests" time="0.884"/>
+  <testcase name="testAddRemoveTasks" classname="minesim.AutoTaskTests" time="0.913"/>
   <system-out><![CDATA[Prism pipeline init order: sw 
-Using platform text rasterizer
 Using native-based Pisces rasterizer
 Using dirty region optimizations
 Not using texture mask for primitives

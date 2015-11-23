@@ -1,8 +1,8 @@
 package minesim.entities.disease;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 
-import common.disease.Disease;
 import minesim.entities.Peon;
 
 /**
@@ -12,16 +12,17 @@ import minesim.entities.Peon;
  */
 
 public class Illness extends Disease<Peon, Medicine> {
-
+    private HashSet<Peon> targets;
+    private HashSet<Medicine> treatments;
     /**
      * Constructor for default Illness
      * A general illness can target any agent
      */
     public Illness() {
-        this.targets = new HashSet<Class<? extends Peon>>();
-        this.targets.add(Peon.class);
-        this.treatments = new HashSet<Class<? extends Medicine>>();
-        this.treatments.add(Medicine.class);
+        this.targets = new HashSet<Peon>();
+//        this.targets.add(p);
+        this.treatments = new HashSet<Medicine>();
+//        this.treatments.add(m);
     }
 
     public String getName() {

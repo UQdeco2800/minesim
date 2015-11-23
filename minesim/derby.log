@@ -1,10 +1,10 @@
 ----------------------------------------------------------------
-Sat Nov 21 16:03:02 EST 2015:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.9.1.0 - (1344872): instance a816c00e-0151-28a3-80d2-000006ff44e0 
-on database directory /Users/tim/Development/DECO2800-2015/deco2800-2015-mine/minesim/decoMineDB  with class loader sun.misc.Launcher$AppClassLoader@74a14482 
-Loaded from file:/Users/tim/.gradle/caches/modules-2/files-2.1/org.apache.derby/derby/10.9.1.0/4538cf5564ab3c262eec65c55fdb13965625589c/derby-10.9.1.0.jar
+Mon Nov 23 12:47:13 AEST 2015:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.9.1.0 - (1344872): instance a816c00e-0151-323c-ef19-00001035a4e8 
+on database directory C:\Users\James\Documents\minesim\minesim\decoMineDB  with class loader sun.misc.Launcher$AppClassLoader@7852e922 
+Loaded from file:/C:/Users/James/.gradle/caches/modules-2/files-2.1/org.apache.derby/derby/10.9.1.0/4538cf5564ab3c262eec65c55fdb13965625589c/derby-10.9.1.0.jar
 java.vendor=Oracle Corporation
-java.runtime.version=1.8.0_20-b26
-user.dir=/Users/tim/Development/DECO2800-2015/deco2800-2015-mine/minesim
+java.runtime.version=1.8.0_60-b27
+user.dir=C:\Users\James\Documents\minesim\minesim
 derby.system.home=null
 Database Class Loader started - derby.database.classpath=''

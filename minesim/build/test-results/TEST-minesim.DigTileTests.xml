@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="minesim.DigTileTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2015-11-21T05:21:28" hostname="Tims-Retina-MacBook-Pro.local" time="1.067">
+<testsuite name="minesim.DigTileTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2015-11-23T02:47:13" hostname="James-PC" time="0.545">
   <properties/>
-  <testcase name="testBoundary" classname="minesim.DigTileTests" time="1.067"/>
+  <testcase name="testBoundary" classname="minesim.DigTileTests" time="0.545"/>
   <system-out><![CDATA[minesim.tiles.TileGridManager Generated world of 14 x 12 chunks
 minesim.tiles.TileGridManager Changed tile at (0, 1) from Air to Dirt
 ]]></system-out>
