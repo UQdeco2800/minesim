@@ -1,5 +1,5 @@
 # DecoMine   
-[![Build Status](http://deco2800.uqcloud.net/jenkins/buildStatus/icon?job=Mine)](http://deco2800.uqcloud.net/jenkins/job/Mine/)
+[![Build Status](http://deco2800.uqcloud.net/jenkins/buildStatus/icon?job=Mine-OpenSource)](http://deco2800.uqcloud.net/jenkins/job/Mine-OpenSource/)
 
 A mining simulator game built as part of the DECO2800 Simulator Bundle Project in 2015.
 
