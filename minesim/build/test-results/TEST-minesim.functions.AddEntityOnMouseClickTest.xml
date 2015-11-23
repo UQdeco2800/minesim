@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="minesim.functions.AddEntityOnMouseClickTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2015-11-21T05:21:47" hostname="Tims-Retina-MacBook-Pro.local" time="0.442">
+<testsuite name="minesim.functions.AddEntityOnMouseClickTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2015-11-22T10:06:11" hostname="Tims-Retina-MacBook-Pro.local" time="0.492">
   <properties/>
-  <testcase name="testAddEntitySuccess" classname="minesim.functions.AddEntityOnMouseClickTest" time="0.245"/>
-  <testcase name="testAddEntityFail" classname="minesim.functions.AddEntityOnMouseClickTest" time="0.197"/>
-  <testcase name="testSetBuildMode" classname="minesim.functions.AddEntityOnMouseClickTest" time="0.0"/>
+  <testcase name="testAddEntitySuccess" classname="minesim.functions.AddEntityOnMouseClickTest" time="0.241"/>
+  <testcase name="testAddEntityFail" classname="minesim.functions.AddEntityOnMouseClickTest" time="0.249"/>
+  <testcase name="testSetBuildMode" classname="minesim.functions.AddEntityOnMouseClickTest" time="0.001"/>
   <system-out><![CDATA[minesim.tiles.TileGridManager Generated world of 14 x 12 chunks
 minesim.tiles.TileGridManager Generated world of 14 x 12 chunks
 ]]></system-out>

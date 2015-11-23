@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="minesim.MusicTests" tests="20" skipped="2" failures="0" errors="0" timestamp="2015-11-21T05:21:32" hostname="Tims-Retina-MacBook-Pro.local" time="11.544">
+<testsuite name="minesim.MusicTests" tests="20" skipped="2" failures="0" errors="0" timestamp="2015-11-22T10:05:55" hostname="Tims-Retina-MacBook-Pro.local" time="11.6">
   <properties/>
-  <testcase name="playTest" classname="minesim.MusicTests" time="0.34"/>
-  <testcase name="testGetInstance" classname="minesim.MusicTests" time="0.0">
+  <testcase name="testGetInstance" classname="minesim.MusicTests" time="0.001">
     <skipped/>
   </testcase>
+  <testcase name="playTest" classname="minesim.MusicTests" time="0.386"/>
   <testcase name="testChangeMusic" classname="minesim.MusicTests" time="0.0">
     <skipped/>
   </testcase>
   <testcase name="testSetVolumeInPlay" classname="minesim.MusicTests" time="0.019"/>
   <testcase name="testSetMuteInPlay" classname="minesim.MusicTests" time="0.009"/>
-  <testcase name="testPlayDayMusic" classname="minesim.MusicTests" time="0.068"/>
+  <testcase name="testPlayDayMusic" classname="minesim.MusicTests" time="0.066"/>
   <testcase name="testPlayNightMusic" classname="minesim.MusicTests" time="0.007"/>
   <testcase name="fadeOutTest" classname="minesim.MusicTests" time="5.517"/>
-  <testcase name="fadeInTest" classname="minesim.MusicTests" time="5.512"/>
+  <testcase name="fadeInTest" classname="minesim.MusicTests" time="5.516"/>
   <testcase name="testingStop" classname="minesim.MusicTests" time="0.019"/>
   <testcase name="testTickMusicLoop" classname="minesim.MusicTests" time="0.002"/>
   <testcase name="testMusicMute" classname="minesim.MusicTests" time="0.004"/>
@@ -22,9 +22,9 @@
   <testcase name="testMediaListGetSet" classname="minesim.MusicTests" time="0.003"/>
   <testcase name="testMediaPlayerGetSet" classname="minesim.MusicTests" time="0.003"/>
   <testcase name="testTrackIndexGetSet" classname="minesim.MusicTests" time="0.002"/>
-  <testcase name="testDayPassedGetSet" classname="minesim.MusicTests" time="0.003"/>
-  <testcase name="testDayGetSet" classname="minesim.MusicTests" time="0.002"/>
-  <testcase name="testNightPassedGetSet" classname="minesim.MusicTests" time="0.002"/>
+  <testcase name="testDayPassedGetSet" classname="minesim.MusicTests" time="0.004"/>
+  <testcase name="testDayGetSet" classname="minesim.MusicTests" time="0.003"/>
+  <testcase name="testNightPassedGetSet" classname="minesim.MusicTests" time="0.003"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[Exception in thread "Thread-18" java.lang.NullPointerException
 	at javafx.scene.media.MediaPlayer.setVolume(MediaPlayer.java:869)

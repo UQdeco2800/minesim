@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="minesim.tile.TileGridManagerTests" tests="13" skipped="0" failures="0" errors="0" timestamp="2015-11-21T05:21:50" hostname="Tims-Retina-MacBook-Pro.local" time="3.665">
+<testsuite name="minesim.tile.TileGridManagerTests" tests="13" skipped="0" failures="0" errors="0" timestamp="2015-11-22T10:06:14" hostname="Tims-Retina-MacBook-Pro.local" time="4.023">
   <properties/>
-  <testcase name="testInitialise" classname="minesim.tile.TileGridManagerTests" time="0.277"/>
-  <testcase name="testAddChunk" classname="minesim.tile.TileGridManagerTests" time="0.001"/>
+  <testcase name="testInitialise" classname="minesim.tile.TileGridManagerTests" time="0.319"/>
+  <testcase name="testWorldGen" classname="minesim.tile.TileGridManagerTests" time="0.06"/>
+  <testcase name="testGetLoadedChunkCountWithRemoval" classname="minesim.tile.TileGridManagerTests" time="0.003"/>
   <testcase name="testChunkIsLoaded" classname="minesim.tile.TileGridManagerTests" time="0.002"/>
-  <testcase name="testWorldGen" classname="minesim.tile.TileGridManagerTests" time="0.072"/>
-  <testcase name="testRender" classname="minesim.tile.TileGridManagerTests" time="0.188"/>
-  <testcase name="testGenerateChunk" classname="minesim.tile.TileGridManagerTests" time="0.001"/>
-  <testcase name="testGetLoadedChunkCount" classname="minesim.tile.TileGridManagerTests" time="0.002"/>
+  <testcase name="testUnloadChunk" classname="minesim.tile.TileGridManagerTests" time="0.002"/>
+  <testcase name="testDoesEntityOverlapWithTileType" classname="minesim.tile.TileGridManagerTests" time="3.097"/>
+  <testcase name="testGetLoadedChunkCount" classname="minesim.tile.TileGridManagerTests" time="0.001"/>
   <testcase name="testGetLightAtLocation" classname="minesim.tile.TileGridManagerTests" time="0.002"/>
-  <testcase name="testUnloadChunk" classname="minesim.tile.TileGridManagerTests" time="0.001"/>
   <testcase name="testGetTileAtLocation" classname="minesim.tile.TileGridManagerTests" time="0.001"/>
-  <testcase name="testDoesEntityOverlapWithTileType" classname="minesim.tile.TileGridManagerTests" time="2.805"/>
-  <testcase name="testGetLoadedChunkCountWithRemoval" classname="minesim.tile.TileGridManagerTests" time="0.001"/>
-  <testcase name="testRemoveGrassEffects" classname="minesim.tile.TileGridManagerTests" time="0.307"/>
+  <testcase name="testRender" classname="minesim.tile.TileGridManagerTests" time="0.19"/>
+  <testcase name="testRemoveGrassEffects" classname="minesim.tile.TileGridManagerTests" time="0.336"/>
+  <testcase name="testAddChunk" classname="minesim.tile.TileGridManagerTests" time="0.001"/>
+  <testcase name="testGenerateChunk" classname="minesim.tile.TileGridManagerTests" time="0.002"/>
   <system-out><![CDATA[minesim.tiles.TileGridManager Generated world of 14 x 12 chunks
 minesim.tiles.TileGridManager Changed tile at (1, 4) from Air to Dirt
 minesim.tiles.TileGridManager Changed tile at (9, 4) from Air to Grass

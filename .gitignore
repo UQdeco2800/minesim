@@ -26,7 +26,8 @@ build
 
 # Database
 
-DecoWorldDB/
+minesim/decoWorldDB/
+decoWorldDB/
 decoworld.vanilla/resources/Thumbs.db
 /bin
 *.dat

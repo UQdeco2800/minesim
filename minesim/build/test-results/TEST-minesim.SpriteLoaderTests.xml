@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="minesim.SpriteLoaderTests" tests="8" skipped="0" failures="0" errors="0" timestamp="2015-11-21T05:21:46" hostname="Tims-Retina-MacBook-Pro.local" time="0.024">
+<testsuite name="minesim.SpriteLoaderTests" tests="8" skipped="0" failures="0" errors="0" timestamp="2015-11-22T10:06:10" hostname="Tims-Retina-MacBook-Pro.local" time="0.017">
   <properties/>
-  <testcase name="testNegativeDimensions" classname="minesim.SpriteLoaderTests" time="0.004"/>
+  <testcase name="testNegativeDimensions" classname="minesim.SpriteLoaderTests" time="0.003"/>
   <testcase name="testInvalidSpriteSheetDimensions" classname="minesim.SpriteLoaderTests" time="0.003"/>
   <testcase name="testPositiveDimensions" classname="minesim.SpriteLoaderTests" time="0.003"/>
-  <testcase name="testMissingSprite" classname="minesim.SpriteLoaderTests" time="0.003"/>
-  <testcase name="testNullSpriteSheet" classname="minesim.SpriteLoaderTests" time="0.0"/>
-  <testcase name="testValidSpriteDimensions" classname="minesim.SpriteLoaderTests" time="0.002"/>
+  <testcase name="testMissingSprite" classname="minesim.SpriteLoaderTests" time="0.001"/>
+  <testcase name="testNullSpriteSheet" classname="minesim.SpriteLoaderTests" time="0.001"/>
+  <testcase name="testValidSpriteDimensions" classname="minesim.SpriteLoaderTests" time="0.003"/>
   <testcase name="testValidSpriteSheet" classname="minesim.SpriteLoaderTests" time="0.003"/>
-  <testcase name="testInvalidSpriteSheet" classname="minesim.SpriteLoaderTests" time="0.002"/>
+  <testcase name="testInvalidSpriteSheet" classname="minesim.SpriteLoaderTests" time="0.0"/>
   <system-out><![CDATA[minesim.entities.SpriteLoader You are requesting a grid position outside of your sprite sheet.
 java.awt.image.RasterFormatException: x lies outside the raster
 	at sun.awt.image.ByteInterleavedRaster.createWritableChild(ByteInterleavedRaster.java:1239)

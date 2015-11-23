@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="minesim.FrameTests" tests="8" skipped="0" failures="0" errors="0" timestamp="2015-11-21T05:21:29" hostname="Tims-Retina-MacBook-Pro.local" time="0.095">
+<testsuite name="minesim.FrameTests" tests="8" skipped="0" failures="0" errors="0" timestamp="2015-11-22T10:05:52" hostname="Tims-Retina-MacBook-Pro.local" time="0.091">
   <properties/>
-  <testcase name="inValidFrame" classname="minesim.FrameTests" time="0.005"/>
-  <testcase name="invalidSettersFrame" classname="minesim.FrameTests" time="0.01"/>
-  <testcase name="validFrameInitialisation" classname="minesim.FrameTests" time="0.008"/>
+  <testcase name="inValidFrame" classname="minesim.FrameTests" time="0.004"/>
+  <testcase name="invalidSettersFrame" classname="minesim.FrameTests" time="0.013"/>
+  <testcase name="validFrameInitialisation" classname="minesim.FrameTests" time="0.027"/>
   <testcase name="validGetters" classname="minesim.FrameTests" time="0.008"/>
-  <testcase name="validSettersFrame" classname="minesim.FrameTests" time="0.011"/>
-  <testcase name="invalidSettersDuration" classname="minesim.FrameTests" time="0.025"/>
+  <testcase name="validSettersFrame" classname="minesim.FrameTests" time="0.012"/>
+  <testcase name="invalidSettersDuration" classname="minesim.FrameTests" time="0.006"/>
   <testcase name="validSettersDuration" classname="minesim.FrameTests" time="0.005"/>
   <testcase name="inValidDuration" classname="minesim.FrameTests" time="0.009"/>
   <system-out><![CDATA[minesim.entities.Frame You cannot have null frames.

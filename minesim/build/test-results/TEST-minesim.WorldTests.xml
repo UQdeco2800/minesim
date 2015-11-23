@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="minesim.WorldTests" tests="5" skipped="0" failures="0" errors="0" timestamp="2015-11-21T05:21:46" hostname="Tims-Retina-MacBook-Pro.local" time="1.115">
+<testsuite name="minesim.WorldTests" tests="5" skipped="0" failures="0" errors="0" timestamp="2015-11-22T10:06:10" hostname="Tims-Retina-MacBook-Pro.local" time="1.226">
   <properties/>
-  <testcase name="removePlayer" classname="minesim.WorldTests" time="0.286"/>
-  <testcase name="testWorldConstructor" classname="minesim.WorldTests" time="0.228"/>
-  <testcase name="testAddNewPlayer" classname="minesim.WorldTests" time="0.206"/>
-  <testcase name="teleporterTesting" classname="minesim.WorldTests" time="0.22"/>
-  <testcase name="testScrolling" classname="minesim.WorldTests" time="0.175"/>
+  <testcase name="removePlayer" classname="minesim.WorldTests" time="0.241"/>
+  <testcase name="testWorldConstructor" classname="minesim.WorldTests" time="0.224"/>
+  <testcase name="testAddNewPlayer" classname="minesim.WorldTests" time="0.27"/>
+  <testcase name="teleporterTesting" classname="minesim.WorldTests" time="0.228"/>
+  <testcase name="testScrolling" classname="minesim.WorldTests" time="0.263"/>
   <system-out><![CDATA[minesim.tiles.TileGridManager Generated world of 14 x 12 chunks
 Cleaning up 1 dead entities
-    minesim.entities.Peon@3f55eb7b
+    minesim.entities.Peon@171033fb
 minesim.tiles.TileGridManager Generated world of 14 x 12 chunks
 minesim.tiles.TileGridManager Generated world of 14 x 12 chunks
 minesim.tiles.TileGridManager Generated world of 14 x 12 chunks
@@ -17,7 +17,7 @@ java.lang.IllegalArgumentException: Invalid sprite sheet dimensions, make sure y
 	at minesim.entities.SpriteLoader.getSprite(SpriteLoader.java:88)
 	at minesim.entities.BuildingTeleporterIn.setUpAnimation(BuildingTeleporterIn.java:77)
 	at minesim.entities.BuildingTeleporterIn.<init>(BuildingTeleporterIn.java:65)
-	at minesim.World.addTeles(World.java:218)
+	at minesim.World.addTeles(World.java:230)
 	at minesim.WorldTests.teleporterTesting(WorldTests.java:76)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -64,7 +64,7 @@ java.lang.IllegalArgumentException: Invalid sprite sheet dimensions, make sure y
 	at minesim.entities.SpriteLoader.getSprite(SpriteLoader.java:88)
 	at minesim.entities.BuildingTeleporterOut.setUpAnimation(BuildingTeleporterOut.java:59)
 	at minesim.entities.BuildingTeleporterOut.<init>(BuildingTeleporterOut.java:47)
-	at minesim.World.addTeles(World.java:219)
+	at minesim.World.addTeles(World.java:231)
 	at minesim.WorldTests.teleporterTesting(WorldTests.java:76)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="minesim.AchievementTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2015-11-21T05:21:20" hostname="Tims-Retina-MacBook-Pro.local" time="0.169">
+<testsuite name="minesim.AchievementTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2015-11-22T10:05:43" hostname="Tims-Retina-MacBook-Pro.local" time="0.152">
   <properties/>
-  <testcase name="achievementCallTest" classname="minesim.AchievementTest" time="0.169"/>
+  <testcase name="achievementCallTest" classname="minesim.AchievementTest" time="0.151"/>
   <testcase name="achievementSetImage" classname="minesim.AchievementTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

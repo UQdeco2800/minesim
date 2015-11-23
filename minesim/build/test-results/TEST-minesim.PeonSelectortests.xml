@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="minesim.PeonSelectortests" tests="5" skipped="4" failures="0" errors="0" timestamp="2015-11-21T05:21:44" hostname="Tims-Retina-MacBook-Pro.local" time="0.276">
+<testsuite name="minesim.PeonSelectortests" tests="5" skipped="4" failures="0" errors="0" timestamp="2015-11-22T10:06:07" hostname="Tims-Retina-MacBook-Pro.local" time="0.437">
   <properties/>
   <testcase name="testSelectMiners" classname="minesim.PeonSelectortests" time="0.0">
     <skipped/>
   </testcase>
-  <testcase name="testIdle" classname="minesim.PeonSelectortests" time="0.268"/>
+  <testcase name="testIdle" classname="minesim.PeonSelectortests" time="0.433"/>
   <testcase name="testSelectAll" classname="minesim.PeonSelectortests" time="0.0">
     <skipped/>
   </testcase>

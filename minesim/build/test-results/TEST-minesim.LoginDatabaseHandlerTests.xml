@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="minesim.LoginDatabaseHandlerTests" tests="10" skipped="0" failures="6" errors="0" timestamp="2015-11-21T05:21:30" hostname="Tims-Retina-MacBook-Pro.local" time="0.321">
+<testsuite name="minesim.LoginDatabaseHandlerTests" tests="10" skipped="0" failures="6" errors="0" timestamp="2015-11-22T10:05:53" hostname="Tims-Retina-MacBook-Pro.local" time="0.252">
   <properties/>
-  <testcase name="testInvalidLoginInvalidUsernamePassword" classname="minesim.LoginDatabaseHandlerTests" time="0.036"/>
-  <testcase name="updateSavedSettingsMultiUser" classname="minesim.LoginDatabaseHandlerTests" time="0.023">
+  <testcase name="testInvalidLoginInvalidUsernamePassword" classname="minesim.LoginDatabaseHandlerTests" time="0.026"/>
+  <testcase name="updateSavedSettingsMultiUser" classname="minesim.LoginDatabaseHandlerTests" time="0.029">
     <failure message="java.lang.AssertionError: 1 x login member expected:&lt;1&gt; but was:&lt;0&gt;" type="java.lang.AssertionError">java.lang.AssertionError: 1 x login member expected:&lt;1&gt; but was:&lt;0&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -53,7 +53,7 @@
 	at java.lang.Thread.run(Thread.java:745)
 </failure>
   </testcase>
-  <testcase name="testLoginExistsPartTwoWithLogger" classname="minesim.LoginDatabaseHandlerTests" time="0.047">
+  <testcase name="testLoginExistsPartTwoWithLogger" classname="minesim.LoginDatabaseHandlerTests" time="0.03">
     <failure message="java.lang.AssertionError: 1 x login member expected:&lt;1&gt; but was:&lt;0&gt;" type="java.lang.AssertionError">java.lang.AssertionError: 1 x login member expected:&lt;1&gt; but was:&lt;0&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -104,7 +104,7 @@
 	at java.lang.Thread.run(Thread.java:745)
 </failure>
   </testcase>
-  <testcase name="testLoginExistsPartFourWithLogger" classname="minesim.LoginDatabaseHandlerTests" time="0.033">
+  <testcase name="testLoginExistsPartFourWithLogger" classname="minesim.LoginDatabaseHandlerTests" time="0.036">
     <failure message="java.lang.AssertionError" type="java.lang.AssertionError">java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:86)
 	at org.junit.Assert.assertTrue(Assert.java:41)
@@ -155,7 +155,7 @@
 	at java.lang.Thread.run(Thread.java:745)
 </failure>
   </testcase>
-  <testcase name="testLoginExistsPartThreeWithLogger" classname="minesim.LoginDatabaseHandlerTests" time="0.064">
+  <testcase name="testLoginExistsPartThreeWithLogger" classname="minesim.LoginDatabaseHandlerTests" time="0.038">
     <failure message="java.lang.AssertionError: 1 x login member expected:&lt;1&gt; but was:&lt;0&gt;" type="java.lang.AssertionError">java.lang.AssertionError: 1 x login member expected:&lt;1&gt; but was:&lt;0&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -206,7 +206,7 @@
 	at java.lang.Thread.run(Thread.java:745)
 </failure>
   </testcase>
-  <testcase name="testLoginExistsWithLogger" classname="minesim.LoginDatabaseHandlerTests" time="0.023">
+  <testcase name="testLoginExistsWithLogger" classname="minesim.LoginDatabaseHandlerTests" time="0.03">
     <failure message="java.lang.AssertionError" type="java.lang.AssertionError">java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:86)
 	at org.junit.Assert.assertTrue(Assert.java:41)
@@ -257,10 +257,10 @@
 	at java.lang.Thread.run(Thread.java:745)
 </failure>
   </testcase>
-  <testcase name="testInvalidLoginInvalidUsername" classname="minesim.LoginDatabaseHandlerTests" time="0.016"/>
-  <testcase name="testNoLoginExists" classname="minesim.LoginDatabaseHandlerTests" time="0.027"/>
-  <testcase name="testInvalidLoginInvalidPassword" classname="minesim.LoginDatabaseHandlerTests" time="0.014"/>
-  <testcase name="updateSavedSettingsSingleUser" classname="minesim.LoginDatabaseHandlerTests" time="0.034">
+  <testcase name="testInvalidLoginInvalidUsername" classname="minesim.LoginDatabaseHandlerTests" time="0.017"/>
+  <testcase name="testNoLoginExists" classname="minesim.LoginDatabaseHandlerTests" time="0.011"/>
+  <testcase name="testInvalidLoginInvalidPassword" classname="minesim.LoginDatabaseHandlerTests" time="0.01"/>
+  <testcase name="updateSavedSettingsSingleUser" classname="minesim.LoginDatabaseHandlerTests" time="0.019">
     <failure message="java.lang.AssertionError: 1 login member expected:&lt;1&gt; but was:&lt;0&gt;" type="java.lang.AssertionError">java.lang.AssertionError: 1 login member expected:&lt;1&gt; but was:&lt;0&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -313,7 +313,7 @@
   </testcase>
   <system-out><![CDATA[minesim.LoginDatabaseHandler Connected database successfully
 minesim.LoginDatabaseHandler Deleting logins failed 
-java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
+java.sql.SQLSyntaxErrorException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source)
@@ -371,12 +371,15 @@ java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: java.sql.SQLException: Table/View 'LOGIN' does not exist.
+Caused by: java.sql.SQLException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
 	... 57 more
-Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
+Caused by: ERROR 42Y07: Schema 'DECOMINE' does not exist
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindTableDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindNonVTITables(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromList.bindTables(Unknown Source)
@@ -388,7 +391,7 @@ Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
 	at org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext.prepareInternalStatement(Unknown Source)
 	... 51 more
 minesim.LoginDatabaseHandler Unable to execute login check 
-java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
+java.sql.SQLSyntaxErrorException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source)
@@ -447,12 +450,15 @@ java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: java.sql.SQLException: Table/View 'LOGIN' does not exist.
+Caused by: java.sql.SQLException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
 	... 58 more
-Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
+Caused by: ERROR 42Y07: Schema 'DECOMINE' does not exist
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindTableDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindNonVTITables(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromList.bindTables(Unknown Source)
@@ -465,7 +471,7 @@ Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
 	at org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext.prepareInternalStatement(Unknown Source)
 	... 52 more
 minesim.LoginDatabaseHandler Deleting logins failed 
-java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
+java.sql.SQLSyntaxErrorException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source)
@@ -523,12 +529,15 @@ java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: java.sql.SQLException: Table/View 'LOGIN' does not exist.
+Caused by: java.sql.SQLException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
 	... 57 more
-Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
+Caused by: ERROR 42Y07: Schema 'DECOMINE' does not exist
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindTableDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindNonVTITables(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromList.bindTables(Unknown Source)
@@ -540,7 +549,7 @@ Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
 	at org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext.prepareInternalStatement(Unknown Source)
 	... 51 more
 minesim.LoginDatabaseHandler Unable to execute login check 
-java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
+java.sql.SQLSyntaxErrorException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source)
@@ -600,12 +609,15 @@ java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: java.sql.SQLException: Table/View 'LOGIN' does not exist.
+Caused by: java.sql.SQLException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
 	... 59 more
-Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
+Caused by: ERROR 42Y07: Schema 'DECOMINE' does not exist
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindTableDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindNonVTITables(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromList.bindTables(Unknown Source)
@@ -618,7 +630,7 @@ Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
 	at org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext.prepareInternalStatement(Unknown Source)
 	... 53 more
 minesim.LoginDatabaseHandler Unable to register login 
-java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
+java.sql.SQLSyntaxErrorException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source)
@@ -677,12 +689,15 @@ java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: java.sql.SQLException: Table/View 'LOGIN' does not exist.
+Caused by: java.sql.SQLException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
 	... 58 more
-Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
+Caused by: ERROR 42Y07: Schema 'DECOMINE' does not exist
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.DMLModStatementNode.verifyTargetTable(Unknown Source)
 	at org.apache.derby.impl.sql.compile.InsertNode.bindStatement(Unknown Source)
 	at org.apache.derby.impl.sql.GenericStatement.prepMinion(Unknown Source)
@@ -690,7 +705,7 @@ Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
 	at org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext.prepareInternalStatement(Unknown Source)
 	... 52 more
 minesim.LoginDatabaseHandler Unable to get the number of users
-java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
+java.sql.SQLSyntaxErrorException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source)
@@ -749,12 +764,15 @@ java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: java.sql.SQLException: Table/View 'LOGIN' does not exist.
+Caused by: java.sql.SQLException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
 	... 58 more
-Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
+Caused by: ERROR 42Y07: Schema 'DECOMINE' does not exist
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindTableDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindNonVTITables(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromList.bindTables(Unknown Source)
@@ -767,7 +785,7 @@ Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
 	at org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext.prepareInternalStatement(Unknown Source)
 	... 52 more
 minesim.LoginDatabaseHandler Deleting logins failed 
-java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
+java.sql.SQLSyntaxErrorException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source)
@@ -825,12 +843,15 @@ java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: java.sql.SQLException: Table/View 'LOGIN' does not exist.
+Caused by: java.sql.SQLException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
 	... 57 more
-Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
+Caused by: ERROR 42Y07: Schema 'DECOMINE' does not exist
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindTableDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindNonVTITables(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromList.bindTables(Unknown Source)
@@ -842,7 +863,7 @@ Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
 	at org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext.prepareInternalStatement(Unknown Source)
 	... 51 more
 minesim.LoginDatabaseHandler Unable to execute login check 
-java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
+java.sql.SQLSyntaxErrorException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source)
@@ -901,12 +922,15 @@ java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: java.sql.SQLException: Table/View 'LOGIN' does not exist.
+Caused by: java.sql.SQLException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
 	... 58 more
-Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
+Caused by: ERROR 42Y07: Schema 'DECOMINE' does not exist
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindTableDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindNonVTITables(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromList.bindTables(Unknown Source)
@@ -919,7 +943,7 @@ Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
 	at org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext.prepareInternalStatement(Unknown Source)
 	... 52 more
 minesim.LoginDatabaseHandler Unable to execute login check 
-java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
+java.sql.SQLSyntaxErrorException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source)
@@ -979,12 +1003,15 @@ java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: java.sql.SQLException: Table/View 'LOGIN' does not exist.
+Caused by: java.sql.SQLException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
 	... 59 more
-Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
+Caused by: ERROR 42Y07: Schema 'DECOMINE' does not exist
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindTableDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindNonVTITables(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromList.bindTables(Unknown Source)
@@ -997,7 +1024,7 @@ Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
 	at org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext.prepareInternalStatement(Unknown Source)
 	... 53 more
 minesim.LoginDatabaseHandler Unable to register login 
-java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
+java.sql.SQLSyntaxErrorException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source)
@@ -1056,12 +1083,15 @@ java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: java.sql.SQLException: Table/View 'LOGIN' does not exist.
+Caused by: java.sql.SQLException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
 	... 58 more
-Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
+Caused by: ERROR 42Y07: Schema 'DECOMINE' does not exist
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.DMLModStatementNode.verifyTargetTable(Unknown Source)
 	at org.apache.derby.impl.sql.compile.InsertNode.bindStatement(Unknown Source)
 	at org.apache.derby.impl.sql.GenericStatement.prepMinion(Unknown Source)
@@ -1069,7 +1099,7 @@ Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
 	at org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext.prepareInternalStatement(Unknown Source)
 	... 52 more
 minesim.LoginDatabaseHandler Unable to get the number of users
-java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
+java.sql.SQLSyntaxErrorException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source)
@@ -1128,12 +1158,15 @@ java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: java.sql.SQLException: Table/View 'LOGIN' does not exist.
+Caused by: java.sql.SQLException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
 	... 58 more
-Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
+Caused by: ERROR 42Y07: Schema 'DECOMINE' does not exist
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindTableDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindNonVTITables(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromList.bindTables(Unknown Source)
@@ -1146,7 +1179,7 @@ Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
 	at org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext.prepareInternalStatement(Unknown Source)
 	... 52 more
 minesim.LoginDatabaseHandler Deleting logins failed 
-java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
+java.sql.SQLSyntaxErrorException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source)
@@ -1204,12 +1237,15 @@ java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: java.sql.SQLException: Table/View 'LOGIN' does not exist.
+Caused by: java.sql.SQLException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
 	... 57 more
-Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
+Caused by: ERROR 42Y07: Schema 'DECOMINE' does not exist
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindTableDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindNonVTITables(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromList.bindTables(Unknown Source)
@@ -1221,7 +1257,7 @@ Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
 	at org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext.prepareInternalStatement(Unknown Source)
 	... 51 more
 minesim.LoginDatabaseHandler Unable to execute login check 
-java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
+java.sql.SQLSyntaxErrorException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source)
@@ -1280,12 +1316,15 @@ java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: java.sql.SQLException: Table/View 'LOGIN' does not exist.
+Caused by: java.sql.SQLException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
 	... 58 more
-Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
+Caused by: ERROR 42Y07: Schema 'DECOMINE' does not exist
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindTableDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindNonVTITables(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromList.bindTables(Unknown Source)
@@ -1298,7 +1337,7 @@ Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
 	at org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext.prepareInternalStatement(Unknown Source)
 	... 52 more
 minesim.LoginDatabaseHandler Unable to execute login check 
-java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
+java.sql.SQLSyntaxErrorException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source)
@@ -1358,12 +1397,15 @@ java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: java.sql.SQLException: Table/View 'LOGIN' does not exist.
+Caused by: java.sql.SQLException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
 	... 59 more
-Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
+Caused by: ERROR 42Y07: Schema 'DECOMINE' does not exist
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindTableDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindNonVTITables(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromList.bindTables(Unknown Source)
@@ -1376,7 +1418,7 @@ Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
 	at org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext.prepareInternalStatement(Unknown Source)
 	... 53 more
 minesim.LoginDatabaseHandler Unable to register login 
-java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
+java.sql.SQLSyntaxErrorException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source)
@@ -1435,12 +1477,15 @@ java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: java.sql.SQLException: Table/View 'LOGIN' does not exist.
+Caused by: java.sql.SQLException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
 	... 58 more
-Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
+Caused by: ERROR 42Y07: Schema 'DECOMINE' does not exist
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.DMLModStatementNode.verifyTargetTable(Unknown Source)
 	at org.apache.derby.impl.sql.compile.InsertNode.bindStatement(Unknown Source)
 	at org.apache.derby.impl.sql.GenericStatement.prepMinion(Unknown Source)
@@ -1448,7 +1493,7 @@ Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
 	at org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext.prepareInternalStatement(Unknown Source)
 	... 52 more
 minesim.LoginDatabaseHandler Deleting logins failed 
-java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
+java.sql.SQLSyntaxErrorException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source)
@@ -1506,12 +1551,15 @@ java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: java.sql.SQLException: Table/View 'LOGIN' does not exist.
+Caused by: java.sql.SQLException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
 	... 57 more
-Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
+Caused by: ERROR 42Y07: Schema 'DECOMINE' does not exist
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindTableDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindNonVTITables(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromList.bindTables(Unknown Source)
@@ -1523,7 +1571,7 @@ Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
 	at org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext.prepareInternalStatement(Unknown Source)
 	... 51 more
 minesim.LoginDatabaseHandler Unable to execute login check 
-java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
+java.sql.SQLSyntaxErrorException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source)
@@ -1582,12 +1630,15 @@ java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: java.sql.SQLException: Table/View 'LOGIN' does not exist.
+Caused by: java.sql.SQLException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
 	... 58 more
-Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
+Caused by: ERROR 42Y07: Schema 'DECOMINE' does not exist
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindTableDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindNonVTITables(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromList.bindTables(Unknown Source)
@@ -1600,7 +1651,7 @@ Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
 	at org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext.prepareInternalStatement(Unknown Source)
 	... 52 more
 minesim.LoginDatabaseHandler Unable to execute login check 
-java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
+java.sql.SQLSyntaxErrorException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source)
@@ -1660,12 +1711,15 @@ java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: java.sql.SQLException: Table/View 'LOGIN' does not exist.
+Caused by: java.sql.SQLException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
 	... 59 more
-Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
+Caused by: ERROR 42Y07: Schema 'DECOMINE' does not exist
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindTableDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindNonVTITables(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromList.bindTables(Unknown Source)
@@ -1678,7 +1732,7 @@ Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
 	at org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext.prepareInternalStatement(Unknown Source)
 	... 53 more
 minesim.LoginDatabaseHandler Unable to register login 
-java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
+java.sql.SQLSyntaxErrorException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source)
@@ -1737,12 +1791,15 @@ java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: java.sql.SQLException: Table/View 'LOGIN' does not exist.
+Caused by: java.sql.SQLException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
 	... 58 more
-Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
+Caused by: ERROR 42Y07: Schema 'DECOMINE' does not exist
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.DMLModStatementNode.verifyTargetTable(Unknown Source)
 	at org.apache.derby.impl.sql.compile.InsertNode.bindStatement(Unknown Source)
 	at org.apache.derby.impl.sql.GenericStatement.prepMinion(Unknown Source)
@@ -1750,7 +1807,7 @@ Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
 	at org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext.prepareInternalStatement(Unknown Source)
 	... 52 more
 minesim.LoginDatabaseHandler Unable to get the number of users
-java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
+java.sql.SQLSyntaxErrorException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source)
@@ -1809,12 +1866,15 @@ java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: java.sql.SQLException: Table/View 'LOGIN' does not exist.
+Caused by: java.sql.SQLException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
 	... 58 more
-Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
+Caused by: ERROR 42Y07: Schema 'DECOMINE' does not exist
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindTableDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindNonVTITables(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromList.bindTables(Unknown Source)
@@ -1827,7 +1887,7 @@ Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
 	at org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext.prepareInternalStatement(Unknown Source)
 	... 52 more
 minesim.LoginDatabaseHandler Deleting logins failed 
-java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
+java.sql.SQLSyntaxErrorException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source)
@@ -1885,12 +1945,15 @@ java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: java.sql.SQLException: Table/View 'LOGIN' does not exist.
+Caused by: java.sql.SQLException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
 	... 57 more
-Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
+Caused by: ERROR 42Y07: Schema 'DECOMINE' does not exist
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindTableDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindNonVTITables(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromList.bindTables(Unknown Source)
@@ -1902,7 +1965,7 @@ Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
 	at org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext.prepareInternalStatement(Unknown Source)
 	... 51 more
 minesim.LoginDatabaseHandler Unable to execute login check 
-java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
+java.sql.SQLSyntaxErrorException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source)
@@ -1961,12 +2024,15 @@ java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: java.sql.SQLException: Table/View 'LOGIN' does not exist.
+Caused by: java.sql.SQLException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
 	... 58 more
-Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
+Caused by: ERROR 42Y07: Schema 'DECOMINE' does not exist
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindTableDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindNonVTITables(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromList.bindTables(Unknown Source)
@@ -1979,7 +2045,7 @@ Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
 	at org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext.prepareInternalStatement(Unknown Source)
 	... 52 more
 minesim.LoginDatabaseHandler Deleting logins failed 
-java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
+java.sql.SQLSyntaxErrorException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source)
@@ -2037,12 +2103,15 @@ java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: java.sql.SQLException: Table/View 'LOGIN' does not exist.
+Caused by: java.sql.SQLException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
 	... 57 more
-Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
+Caused by: ERROR 42Y07: Schema 'DECOMINE' does not exist
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindTableDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindNonVTITables(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromList.bindTables(Unknown Source)
@@ -2054,7 +2123,7 @@ Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
 	at org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext.prepareInternalStatement(Unknown Source)
 	... 51 more
 minesim.LoginDatabaseHandler Unable to execute login check 
-java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
+java.sql.SQLSyntaxErrorException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source)
@@ -2113,12 +2182,15 @@ java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: java.sql.SQLException: Table/View 'LOGIN' does not exist.
+Caused by: java.sql.SQLException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
 	... 58 more
-Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
+Caused by: ERROR 42Y07: Schema 'DECOMINE' does not exist
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindTableDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindNonVTITables(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromList.bindTables(Unknown Source)
@@ -2131,7 +2203,7 @@ Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
 	at org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext.prepareInternalStatement(Unknown Source)
 	... 52 more
 minesim.LoginDatabaseHandler Deleting logins failed 
-java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
+java.sql.SQLSyntaxErrorException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source)
@@ -2189,12 +2261,15 @@ java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: java.sql.SQLException: Table/View 'LOGIN' does not exist.
+Caused by: java.sql.SQLException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
 	... 57 more
-Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
+Caused by: ERROR 42Y07: Schema 'DECOMINE' does not exist
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindTableDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindNonVTITables(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromList.bindTables(Unknown Source)
@@ -2206,7 +2281,7 @@ Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
 	at org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext.prepareInternalStatement(Unknown Source)
 	... 51 more
 minesim.LoginDatabaseHandler Unable to get the number of users
-java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
+java.sql.SQLSyntaxErrorException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source)
@@ -2265,12 +2340,15 @@ java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: java.sql.SQLException: Table/View 'LOGIN' does not exist.
+Caused by: java.sql.SQLException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
 	... 58 more
-Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
+Caused by: ERROR 42Y07: Schema 'DECOMINE' does not exist
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindTableDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindNonVTITables(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromList.bindTables(Unknown Source)
@@ -2283,7 +2361,7 @@ Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
 	at org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext.prepareInternalStatement(Unknown Source)
 	... 52 more
 minesim.LoginDatabaseHandler Unable to execute login check 
-java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
+java.sql.SQLSyntaxErrorException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source)
@@ -2342,12 +2420,15 @@ java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: java.sql.SQLException: Table/View 'LOGIN' does not exist.
+Caused by: java.sql.SQLException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
 	... 58 more
-Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
+Caused by: ERROR 42Y07: Schema 'DECOMINE' does not exist
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindTableDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindNonVTITables(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromList.bindTables(Unknown Source)
@@ -2360,7 +2441,7 @@ Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
 	at org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext.prepareInternalStatement(Unknown Source)
 	... 52 more
 minesim.LoginDatabaseHandler Deleting logins failed 
-java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
+java.sql.SQLSyntaxErrorException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source)
@@ -2418,12 +2499,15 @@ java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: java.sql.SQLException: Table/View 'LOGIN' does not exist.
+Caused by: java.sql.SQLException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
 	... 57 more
-Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
+Caused by: ERROR 42Y07: Schema 'DECOMINE' does not exist
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindTableDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindNonVTITables(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromList.bindTables(Unknown Source)
@@ -2435,7 +2519,7 @@ Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
 	at org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext.prepareInternalStatement(Unknown Source)
 	... 51 more
 minesim.LoginDatabaseHandler Unable to execute login check 
-java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
+java.sql.SQLSyntaxErrorException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source)
@@ -2494,12 +2578,15 @@ java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: java.sql.SQLException: Table/View 'LOGIN' does not exist.
+Caused by: java.sql.SQLException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
 	... 58 more
-Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
+Caused by: ERROR 42Y07: Schema 'DECOMINE' does not exist
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindTableDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindNonVTITables(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromList.bindTables(Unknown Source)
@@ -2512,7 +2599,7 @@ Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
 	at org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext.prepareInternalStatement(Unknown Source)
 	... 52 more
 minesim.LoginDatabaseHandler Deleting logins failed 
-java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
+java.sql.SQLSyntaxErrorException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source)
@@ -2570,12 +2657,15 @@ java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: java.sql.SQLException: Table/View 'LOGIN' does not exist.
+Caused by: java.sql.SQLException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
 	... 57 more
-Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
+Caused by: ERROR 42Y07: Schema 'DECOMINE' does not exist
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindTableDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindNonVTITables(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromList.bindTables(Unknown Source)
@@ -2587,7 +2677,7 @@ Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
 	at org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext.prepareInternalStatement(Unknown Source)
 	... 51 more
 minesim.LoginDatabaseHandler Unable to execute login check 
-java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
+java.sql.SQLSyntaxErrorException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source)
@@ -2647,12 +2737,15 @@ java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: java.sql.SQLException: Table/View 'LOGIN' does not exist.
+Caused by: java.sql.SQLException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
 	... 59 more
-Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
+Caused by: ERROR 42Y07: Schema 'DECOMINE' does not exist
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindTableDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindNonVTITables(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromList.bindTables(Unknown Source)
@@ -2665,7 +2758,7 @@ Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
 	at org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext.prepareInternalStatement(Unknown Source)
 	... 53 more
 minesim.LoginDatabaseHandler Unable to register login 
-java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
+java.sql.SQLSyntaxErrorException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source)
@@ -2724,12 +2817,15 @@ java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: java.sql.SQLException: Table/View 'LOGIN' does not exist.
+Caused by: java.sql.SQLException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
 	... 58 more
-Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
+Caused by: ERROR 42Y07: Schema 'DECOMINE' does not exist
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.DMLModStatementNode.verifyTargetTable(Unknown Source)
 	at org.apache.derby.impl.sql.compile.InsertNode.bindStatement(Unknown Source)
 	at org.apache.derby.impl.sql.GenericStatement.prepMinion(Unknown Source)
@@ -2737,7 +2833,7 @@ Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
 	at org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext.prepareInternalStatement(Unknown Source)
 	... 52 more
 minesim.LoginDatabaseHandler Unable to get the number of users
-java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
+java.sql.SQLSyntaxErrorException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source)
@@ -2796,12 +2892,15 @@ java.sql.SQLSyntaxErrorException: Table/View 'LOGIN' does not exist.
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: java.sql.SQLException: Table/View 'LOGIN' does not exist.
+Caused by: java.sql.SQLException: Schema 'DECOMINE' does not exist
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
 	... 58 more
-Caused by: ERROR 42X05: Table/View 'LOGIN' does not exist.
+Caused by: ERROR 42Y07: Schema 'DECOMINE' does not exist
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindTableDescriptor(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromBaseTable.bindNonVTITables(Unknown Source)
 	at org.apache.derby.impl.sql.compile.FromList.bindTables(Unknown Source)

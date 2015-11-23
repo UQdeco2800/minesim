@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="minesim.PeonTests" tests="15" skipped="0" failures="0" errors="0" timestamp="2015-11-21T05:21:44" hostname="Tims-Retina-MacBook-Pro.local" time="0.408">
+<testsuite name="minesim.PeonTests" tests="15" skipped="0" failures="0" errors="0" timestamp="2015-11-22T10:06:08" hostname="Tims-Retina-MacBook-Pro.local" time="0.436">
   <properties/>
   <testcase name="testPeonSetter" classname="minesim.PeonTests" time="0.001"/>
-  <testcase name="testGatherTaskTiredness" classname="minesim.PeonTests" time="0.001"/>
-  <testcase name="testGuardGet" classname="minesim.PeonTests" time="0.001"/>
+  <testcase name="testGatherTaskTiredness" classname="minesim.PeonTests" time="0.0"/>
+  <testcase name="testGuardGet" classname="minesim.PeonTests" time="0.0"/>
   <testcase name="testGuardMod" classname="minesim.PeonTests" time="0.0"/>
   <testcase name="testMinerGet" classname="minesim.PeonTests" time="0.0"/>
   <testcase name="testMinerMod" classname="minesim.PeonTests" time="0.0"/>
@@ -12,10 +12,10 @@
   <testcase name="testTaskTiredness" classname="minesim.PeonTests" time="0.0"/>
   <testcase name="miscPeonTests" classname="minesim.PeonTests" time="0.0"/>
   <testcase name="testPeonInitial" classname="minesim.PeonTests" time="0.0"/>
-  <testcase name="testMakeJump" classname="minesim.PeonTests" time="0.002"/>
+  <testcase name="testMakeJump" classname="minesim.PeonTests" time="0.001"/>
   <testcase name="testSetHigh" classname="minesim.PeonTests" time="0.0"/>
   <testcase name="testPeonExperience" classname="minesim.PeonTests" time="0.0"/>
-  <testcase name="testSetLow" classname="minesim.PeonTests" time="0.001"/>
+  <testcase name="testSetLow" classname="minesim.PeonTests" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
